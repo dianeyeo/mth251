@@ -1,0 +1,89 @@
+.norm {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+
+.hl {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hl-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #357EC7;
+}
+
+.hl-bg {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #357EC7;
+}
+
+table.ops {
+	margin: auto;
+	width: 600px;
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+}
+
+table.ops caption {
+	background-color: #f79646;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .3em;
+}
+
+table.ops thead th {
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+}
+
+table.timecopsard thead th#thDay {
+	width: 40%;
+}
+
+table.ops thead th#thRegular, table.timecard thead th#thOvertime, table.timecard thead th#thTotal {
+	width: 20%;
+}
+
+table.ops th, table.ops td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table.ops td {
+	text-align: right;
+}
+
+table.ops tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.ops tfoot {
+	font-weight: bold;
+	font-size: large;
+	background-color: #687886;
+	color: #fff;
+}
+
+table.ops tr.even {
+	background-color: #fde9d9;
+}

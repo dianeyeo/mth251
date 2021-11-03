@@ -1,0 +1,62 @@
+.norm {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+
+.hl {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hl-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #357EC7;
+}
+
+.hl-bg {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #357EC7;
+}
+
+
+/* Border styles */
+#table-ops thead, #table-ops tr {
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: rgb(230, 189, 189);
+}
+#table-ops {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(230, 189, 189);
+}
+
+/* Padding and font style */
+#table-ops td, #table-ops th {
+padding: 5px 10px;
+font-size: 12px;
+font-family: 'Open Sans';
+color: rgb(177, 106, 104);
+}
+
+/* Alternating background colors */
+#table-ops tr:nth-child(even) {
+    background: rgb(238, 211, 210)
+}
+
+#table-ops tr:nth-child(odd) {
+    background: #FFF
+}

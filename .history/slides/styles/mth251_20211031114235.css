@@ -1,0 +1,31 @@
+.norm {
+    font-family: 'Open Sans';
+    font-size: 0.75rem;
+}
+
+.hl {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hl-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #357EC7;
+}
+
+.hl-bg {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #357EC7;
+}

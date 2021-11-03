@@ -1,0 +1,81 @@
+.norm {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+
+.hl {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hl-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #357EC7;
+}
+
+.hl-bg {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #357EC7;
+}
+
+table.ops {
+	width:60%;
+    table-layout:fixed;
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+    font-family: 'Open Sans';
+}
+
+table.ops caption {
+}
+
+table.ops thead th {
+    font-weight: bold;
+    color: #ffffff;
+	padding: 8px;
+	background-color: #357EC7;
+    border-width: 3px 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+table.ops th, table.ops td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+table.ops td {
+	text-align: right;
+}
+
+table.ops tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.ops tr.odd {
+	background-color: #add8e6;
+}
+
+table.ops tr.even {
+	background-color: #f0f8ff;
+}
+
+table.ops tfoot {
+}

@@ -1,0 +1,114 @@
+.norm {
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    line-height: 1.5em;
+}
+
+.hl {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.hl-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #357EC7;
+}
+
+.hl-bg {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 0.6rem;
+    color: #357EC7;
+    line-height: 1.5em;
+}
+
+table.ops {
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+    font-family: 'Open Sans';
+    text-align: left;
+}
+
+
+table.ops thead th {
+    font-weight: bold;
+    color: #ffffff;
+	padding: 8px;
+	background-color: #4472c4;
+    border-width: 3px 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+table.ops th, table.ops td {
+    width: 20%;
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+table.ops td {
+    color: #357EC7;
+}
+
+table.ops tr.odd {
+	background-color: #cfd5ea;
+}
+
+table.ops tr.even {
+	background-color: #e9ebf5;
+}
+
+
+table.flashcard {
+	border-collapse: collapse;
+	border: 1px solid #fff; /*for older IE*/
+	border-style: hidden;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    text-align: left;
+}
+
+
+table.flashcard thead th {
+    height: 10px;
+    color: #ffffff;
+	padding: 0px;
+	background-color: #4472c4;
+    border-width: 3px 1px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+table.flashcard th, table.flashcard td {
+    width: 20%;
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+table.flashcard td {
+    color: #357EC7;
+}
+
+table.flashcard tr.odd {
+	background-color: #cfd5ea;
+}
+
+table.flashcard tr.even {
+	background-color: #e9ebf5;
+}

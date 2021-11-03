@@ -1,0 +1,21 @@
+.hg {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+}
+
+.hg-color {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    color: #357EC7;
+}
+
+.hg-bg {
+    font-family: 'Open Sans';
+    background-color: #f4f0ec;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+}
+
+.katex {
+
+}
