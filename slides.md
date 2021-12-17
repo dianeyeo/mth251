@@ -66,11 +66,15 @@ Data Structures and Algorithms I
 <br/>
 
 <div grid="~ cols-4 gap-8">
-  <div><img src="/images/study_guide.png" style="width: 140px; height: 200px"/></div>
-  <div><img src="/images/study_book.png" style="width: 140px; height: 200px"/></div>
-  <div><img src="/images/algorithms.png" style="width: 140px; height: 200px"/></div>
-  <div><img src="/images/intro_algorithms.png" style="width: 140px; height: 200px"/></div>
+  <div><img src="/images/study_guide.png" style="width: 140px; height: 180px"/></div>
+  <div><img src="/images/study_book.png" style="width: 140px; height: 180px"/></div>
+  <div><img src="/images/common-sense.jpg" style="width: 140px; height: 180px"/></div>
+  <div><img src="/images/grokking.jpg" style="width: 140px; height: 180px"/></div>
+  <div><img src="/images/algorithms.png" style="width: 140px; height: 180px"/></div>
+  <div><img src="/images/intro_algorithms.png" style="width: 140px; height: 180px"/></div>
 </div>
+
+![]()
 
 ---
 
