@@ -1,6 +1,3 @@
-# mac
-.DS_Store
-
 # Logs
 logs
 *.log
@@ -120,4 +117,3 @@ docs/.vuepress/dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-yarn.lock

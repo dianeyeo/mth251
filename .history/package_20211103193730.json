@@ -10,7 +10,7 @@
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
-  "name": "SUSS MTH251",
+  "name": "slides",
   "devDependencies": {
     "playwright-chromium": "^1.16.3"
   }
