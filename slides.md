@@ -1607,7 +1607,7 @@ layout: center
 -   download and install Anaconda
 -   create and Activate your Anaconda Python env
 -   (Optional) install and setup VS Code
--   familiar yourself with Python and do exercise <mdi-light-link />[lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
+-   familiar yourself with Python and do exercise 📝 [lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
 
 ---
 
@@ -1735,7 +1735,7 @@ layout: center
 <mdi-clipboard-list-outline /> 
 
 -   review Array, Stack, Queue
--   exercise <mdi-light-link />[lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
+-   exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
 -   priority queue
 -   circular queue
 
@@ -1887,7 +1887,7 @@ Implementation of CircularQueue class:
 
 -   linear search, binary search
 -   review Singly Linked List, Doubly Linked List, Recursion
--   exercise <mdi-light-link />[lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
+-   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
 
 ---
 
@@ -1929,7 +1929,7 @@ Implementation of CircularQueue class:
 <mdi-clipboard-list-outline /> 
 
 -   review Binary Tree and 4 traverse methods
--   exercise <mdi-light-link />[lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
+-   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
 
 ---
 
@@ -2001,7 +2001,7 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <mdi-clipboard-list-outline /> 
 
--   exercise <mdi-light-link />[lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
+-   exercise 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
 
 ---
 
@@ -2011,4 +2011,4 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <mdi-clipboard-list-outline /> 
 
--   exercise <mdi-light-link />[lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)
+-   exercise 📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)
