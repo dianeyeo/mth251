@@ -35,20 +35,28 @@ Data Structures and Algorithms I
 
 # Course Structure
 
--   6 weeks: Jan ~ Mar
+<br/>
 
-    -   6 seminars:  
-        [1st](/7): Python, Complexity & Big O  
-        [2nd](/23): Array, Stack, Queue  
-        [3rd](/20): Linked List, Recursion, Binary Search  
-        [4th](/25): Tree  
-        [5th](/30): Algorithm Design & Pattern  
-        [6th](/45): Review  
+<div grid="~ cols-2 gap-4">
+<div>
+6 weeks (Jan ~ Mar), 6 seminars, 6 labs:
 
-    -   6 labs: [1st]() [2nd]() [3rd]() [4th]() [5th]() [6th]()
-
--   3 assignments & open book exam
-    <img src="/images/assessment.png" style="width:40%"/>
+<p class="norm">
+1. Python, Complexity & Big O<br/>
+2. Array, Stack, Queue<br/>
+3. Linked List, Recursion, Binary Search<br/> 
+4. Tree<br/> 
+5. Algorithm Design & Pattern<br/> 
+6. Review
+</p>
+</div>
+<div>
+3 assignments & open book exam:
+<p class="norm">
+<img src="/images/assessment.png" style="width:80%"/>
+</p>
+</div>
+</div>
 
 ---
 
@@ -61,9 +69,21 @@ Data Structures and Algorithms I
 
 ---
 
-# [Learning Resource <logos-github-octocat />](https://github.com/fastzhong/mth251/tree/main/resources)
+# Learning Resource
 
 <br/>
+
+slides online: [https://mth251.fastzhong.com/](https://mth251.fastzhong.com/)
+
+pdf: [<logos-github-octocat /> https://github.com/fastzhong/mth251/blob/main/mth251.pdf](https://github.com/fastzhong/mth251/blob/main/mth251.pdf)
+
+labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
+
+---
+
+# Learning Resource
+
+[📚 books](https://github.com/fastzhong/mth251/tree/main/resources)
 
 <div grid="~ cols-4 gap-4">
   <div><img src="/images/study_guide.png" style="width: 140px; height: 180px"/></div>
@@ -76,9 +96,9 @@ Data Structures and Algorithms I
 
 ---
 
-# [Learning Resource <mdi-file-code />](https://leetcode.com/)
+# Learning Resource
 
-<br/>
+[<mdi-file-code /> Leetcode](https://leetcode.com/)
 
 <img src="/images/leetcode.png" style="border-radius: 8px; width: 70%"/>
 
@@ -154,36 +174,39 @@ Data Structures and Algorithms I
 
 ---
 
-# Python Data Type & Operators 
+# Python Data Type & Operators
 
 <logos-jupyter />
 
-- numbers: <kbd>int</kbd> <kbd>float</kbd> <kbd>complex</kbd>  
-    - arithmetic operator: <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd> <kbd>//</kbd> <kbd>%</kbd> <kbd>**</kbd>
-    - bitwise operator: <kbd>&</kbd> <kbd>|</kbd> <kbd>^</kbd> <kbd>>></kbd> <kbd><<</kbd> <kbd>~</kbd> 
-    - <kbd>range()</kbd>: a list of integers
+-   numbers: <kbd>int</kbd> <kbd>float</kbd> <kbd>complex</kbd>
 
-- strings: <kbd>''</kbd> <kbd>""</kbd> <kbd>\'</kbd> <kbd>\"</kbd> <kbd>\t</kbd> <kbd>\n</kbd> <kbd>\r</kbd> <kbd>\\\\</kbd> <span class="norm">etc.</span>
-    - <kbd>join()</kbd> <kbd>split()</kbd> <kbd>ljust()</kbd> <kbd>rjust()</kbd> <kbd>lower()</kbd> <kbd>upper()</kbd> <kbd>lstrip()</kbd> <kbd>rstrip()</kbd> <kbd>strip()</kbd> <span class="norm">etc.</span>
+    -   arithmetic operator: <kbd>+</kbd> <kbd>-</kbd> <kbd>\*</kbd> <kbd>/</kbd> <kbd>//</kbd> <kbd>%</kbd> <kbd>\*\*</kbd>
+    -   bitwise operator: <kbd>&</kbd> <kbd>|</kbd> <kbd>^</kbd> <kbd>>></kbd> <kbd><<</kbd> <kbd>~</kbd>
+    -   <kbd>range()</kbd>: a list of integers
 
-- boolean: <kbd>True</kbd> <kbd>False</kbd>  
-    - True: <span class="norm">non-zero number, non-empty string, non-empty list </span>
-    - False: <span class="norm">0, 0.0, "", [], None</span>
+-   strings: <kbd>''</kbd> <kbd>""</kbd> <kbd>\'</kbd> <kbd>\"</kbd> <kbd>\t</kbd> <kbd>\n</kbd> <kbd>\r</kbd> <kbd>\\\\</kbd> <span class="norm">etc.</span>
+
+    -   <kbd>join()</kbd> <kbd>split()</kbd> <kbd>ljust()</kbd> <kbd>rjust()</kbd> <kbd>lower()</kbd> <kbd>upper()</kbd> <kbd>lstrip()</kbd> <kbd>rstrip()</kbd> <kbd>strip()</kbd> <span class="norm">etc.</span>
+
+-   boolean: <kbd>True</kbd> <kbd>False</kbd>
+    -   True: <span class="norm">non-zero number, non-empty string, non-empty list </span>
+    -   False: <span class="norm">0, 0.0, "", [], None</span>
 
 ---
 
-# Python Data Type & Operators 
+# Python Data Type & Operators
 
 <logos-jupyter />
 
-- boolean: <kbd>True</kbd> <kbd>False</kbd>  
-    - logic operator: <kbd>and</kbd> <kbd>or</kbd> <kbd>not</kbd>  
-    - comparison operator: <kbd>></kbd> <kbd><</kbd> <kbd>>=</kbd> <kbd><=</kbd> <kbd>==</kbd> <kbd>！=</kbd>
-    - identity operator: <kbd>is</kbd> <kbd>is not</kbd>
+-   boolean: <kbd>True</kbd> <kbd>False</kbd>
 
-- None
+    -   logic operator: <kbd>and</kbd> <kbd>or</kbd> <kbd>not</kbd>
+    -   comparison operator: <kbd>></kbd> <kbd><</kbd> <kbd>>=</kbd> <kbd><=</kbd> <kbd>==</kbd> <kbd>！=</kbd>
+    -   identity operator: <kbd>is</kbd> <kbd>is not</kbd>
 
-- type conversion/casting: <kbd>int()</kbd> <kbd>float()</kbd> <kbd>str()</kbd> <kbd>bool()</kbd> <kbd>hex()</kbd> <kbd>ord()</kbd> 
+-   None
+
+-   type conversion/casting: <kbd>int()</kbd> <kbd>float()</kbd> <kbd>str()</kbd> <kbd>bool()</kbd> <kbd>hex()</kbd> <kbd>ord()</kbd>
 
 ---
 
@@ -191,20 +214,22 @@ Data Structures and Algorithms I
 
 <logos-jupyter />
 
-- collections: <kbd>list</kbd> <kbd>tuple</kbd> <kbd>set</kbd> <kbd>dictionary</kbd>
-  - membership operator: <kbd>in</kbd> <kbd>not in</kbd> 
+-   collections: <kbd>list</kbd> <kbd>tuple</kbd> <kbd>set</kbd> <kbd>dictionary</kbd>
 
-- list []: a collection of items, usually the items all have the same type
-  - sequence type
-  - sortable
-  - grow and shrink as needed
-  - most widely used
+    -   membership operator: <kbd>in</kbd> <kbd>not in</kbd>
 
-- tuple (): a collection which is ordered and unchangeable
+-   list []: a collection of items, usually the items all have the same type
 
-- set {}: a collection which is unordered and unindexed
+    -   sequence type
+    -   sortable
+    -   grow and shrink as needed
+    -   most widely used
 
-- dictionary: a set of <kbd>key: value</kbd> pairs, unordered, changeable and indexed
+-   tuple (): a collection which is ordered and unchangeable
+
+-   set {}: a collection which is unordered and unindexed
+
+-   dictionary: a set of <kbd>key: value</kbd> pairs, unordered, changeable and indexed
 
 ---
 
@@ -215,11 +240,12 @@ Data Structures and Algorithms I
 -   variable
 
 -   statement & comments
-    - Python uses new lines to complete a command, as opposed to other programming languages often use <kbd>;</kbd> or <kbd>()</kbd>；relies on indentation (<span class="uline">whitespace sensitive</span>), to define scope, such as the scope of loops, functions and classes, as opossed to other programming languages often use <kbd>{}</kbd>  
 
-- control flow
-    - <kbd>if ... elif ... else</kbd>
-    - <kbd>while</kbd> <kbd>for</kbd> <kbd>break</kbd> <kbd>continue</kbd>
+    -   Python uses new lines to complete a command, as opposed to other programming languages often use <kbd>;</kbd> or <kbd>()</kbd>；relies on indentation (<span class="uline">whitespace sensitive</span>), to define scope, such as the scope of loops, functions and classes, as opossed to other programming languages often use <kbd>{}</kbd>
+
+-   control flow
+    -   <kbd>if ... elif ... else</kbd>
+    -   <kbd>while</kbd> <kbd>for</kbd> <kbd>break</kbd> <kbd>continue</kbd>
 
 ---
 
@@ -227,17 +253,18 @@ Data Structures and Algorithms I
 
 <logos-jupyter />
 
-- function
-    - <kbd>def</kbd> <kbd>return</kbd>
-    - <kbd>_main_</kbd>
-    - advanced:
-      - lambda
-      - decorator
-      - closure   
+-   function
 
-- error/exception
-    - handling exception: <kbd>try ... except ... else ... finally</kbd>
-    - raise execption: <kbd>raise</kbd>
+    -   <kbd>def</kbd> <kbd>return</kbd>
+    -   <kbd>_main_</kbd>
+    -   advanced:
+        -   lambda
+        -   decorator
+        -   closure
+
+-   error/exception
+    -   handling exception: <kbd>try ... except ... else ... finally</kbd>
+    -   raise execption: <kbd>raise</kbd>
 
 ---
 
@@ -248,16 +275,17 @@ Data Structures and Algorithms I
 -   <kbd>Procedural</kbd> <span class="norm">vs.</span> <kbd>OOP</kbd> <span class="norm">vs.</span> <kbd>FP</kbd>
 
 -   OO Principal
-      -   <kbd>Inherience</kbd>
-      -   <kbd>Encapsulation</kbd>
-      -   <kbd>Polymorphism</kbd>
 
-- class, instance, attributes, properties, method
+    -   <kbd>Inherience</kbd>
+    -   <kbd>Encapsulation</kbd>
+    -   <kbd>Polymorphism</kbd>
 
-- <kbd>override</kbd> <span class="norm">vs.</span> <kbd>overload</kbd> <span class="norm">vs.</span> <kbd>overwrite</kbd> 
+-   class, instance, attributes, properties, method
+
+-   <kbd>override</kbd> <span class="norm">vs.</span> <kbd>overload</kbd> <span class="norm">vs.</span> <kbd>overwrite</kbd>
 
 <!--
-There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste). OO is invented to simulate how the real world works. We put logic and data together inside the object. FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven.   
+There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste). OO is invented to simulate how the real world works. We put logic and data together inside the object. FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven.
 -->
 
 ---
@@ -266,15 +294,14 @@ There are 3 programming paradigms. In early days, there was only procedural prog
 
 <logos-jupyter />
 
-- modular programming: <kbd>function</kbd> → <kbd>class</kbd> → <kbd>module</kbd> → <kbd>package</kbd>
+-   modular programming: <kbd>function</kbd> → <kbd>class</kbd> → <kbd>module</kbd> → <kbd>package</kbd>
 
-- Modules: Python module (default main module), C module, Build-in module
-    
-- Packages: 
+-   Modules: Python module (default main module), C module, Build-in module
+-   Packages:
 
 ![pkg](/images/pkg.png)
 
-- Standard Lib: <kbd>math</kbd> <kbd>random</kbd> <kbd>re</kbd> <kbd>os</kbd> <kbd>itertools</kbd> <kbd>collections</kbd>
+-   Standard Lib: <kbd>math</kbd> <kbd>random</kbd> <kbd>re</kbd> <kbd>os</kbd> <kbd>itertools</kbd> <kbd>collections</kbd>
 
 ---
 
@@ -282,17 +309,17 @@ There are 3 programming paradigms. In early days, there was only procedural prog
 
 <logos-jupyter />
 
-- Namespaces & Scopes: <kbd>LEGB</kbd> rule
+-   Namespaces & Scopes: <kbd>LEGB</kbd> rule
 
-  ![LEGB](/images/LEGB.png)
+    ![LEGB](/images/LEGB.png)
 
-- help 
+-   help
 
 <!--
 
-Names are identifiers, we use names to track objects - everything in Python is object, class, methods/functions, modules, and so on. Namespace is the naming hierarchy to name things in a way without any ambiguity. Namespaces are implemented as dictionaries in Python. 
+Names are identifiers, we use names to track objects - everything in Python is object, class, methods/functions, modules, and so on. Namespace is the naming hierarchy to name things in a way without any ambiguity. Namespaces are implemented as dictionaries in Python.
 
-Scope is the boundary of the namespace which the particular objects are accessible by others. 
+Scope is the boundary of the namespace which the particular objects are accessible by others.
 
 Built-in scope is a special Python scope that’s created or loaded whenever you run a script or open an interactive session. This scope contains names such as keywords, functions, exceptions, and other attributes that are built into Python. Names in this Python scope are also available from everywhere in your code. It’s automatically loaded by Python when you run a program or script.
 
@@ -316,7 +343,6 @@ LEGB rule — a rule that defines the order of scopes following which a Python i
 
 <logos-youtube-icon />&nbsp;&nbsp;[Python Tutorial - Python for Beginners 2020](https://www.youtube.com/watch?v=kqtD5dpn9C8)
 
-
 <span class="hl-color">freeCodeCamp</span>
 
 <logos-youtube-icon />&nbsp;&nbsp;[Learn Python - Full Course for Beginners Tutorial](https://www.youtube.com/watch?v=rfscVS0vtbw)  
@@ -327,8 +353,8 @@ LEGB rule — a rule that defines the order of scopes following which a Python i
 
 <logos-youtube-icon />&nbsp;&nbsp;[Learn Python - Full Course for Beginners Tutorial](https://www.youtube.com/watch?v=rfscVS0vtbw)
 
-Cheatsheet:   
-🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)    
+Cheatsheet:  
+🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)  
 🧾&nbsp;&nbsp;[Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 <style>
@@ -339,7 +365,7 @@ p {
 
 ---
 
-#  Data Structure & Algorithms
+# Data Structure & Algorithms
 
 <br/>
 
@@ -366,13 +392,14 @@ An algorithm is a sequence of instructions, typically to solve a class of proble
 -->
 
 ---
-#  Data Structure & Algorithms
+
+# Data Structure & Algorithms
 
 Example1:
 
 ---
 
-#  Data Structure & Algorithms
+# Data Structure & Algorithms
 
 Example2:
 
@@ -384,7 +411,7 @@ Why learn DSA?
 
 ---
 
-#  Data Structure & Algorithms
+# Data Structure & Algorithms
 
 Data Structure
 
@@ -495,11 +522,11 @@ $O(f) = f$
 $O(c·f) = O(f)$  
 $O(f+g) = O(max(f, g))$  
 $O(f)·O(g) = O(f·g)$  
-$O(f·g) \leq O(f·h)$ if and only if $O(g) \leq O(h)$  
-$O(x^a) \leq O(x^b)$ if and only if $a \leq b$  
-$O(a^x) \lt O(b^x)$ if and only if if $a \lt b$  
-$O(x^a) \lt O(b^x)$ if and only if if $d \gt 1$ (assuming $c \geq 1$ and $d \geq 1$)  
-$O(log_* x) \lt O(x^c)$ if and only if if $c \gt 0$
+$O(f·g) \leq O(f·h)$ if & only if $O(g) \leq O(h)$  
+$O(x^a) \leq O(x^b)$ if & only if $a \leq b$  
+$O(a^x) \lt O(b^x)$ if & only if if $a \lt b$  
+$O(x^a) \lt O(b^x)$ if & only if if $d \gt 1$ (assuming $c \geq 1$ and $d \geq 1$)  
+$O(log_* x) \lt O(x^c)$ if & only if if $c \gt 0$
 
 ---
 
@@ -659,12 +686,17 @@ An <span class="hl-bg">abstract data type</span> (ADT) is an abstraction of a <s
 
 Programming language provides different <span class="hl-bg">data types</span> to implement/represent different data structure.
 
+i.e. Array
+
+-   a linear abstract data type
+-   a java data type
+
 <!--
 When studying algorithm, we use data structure such as Array, Dynamic Array, Linked List, as the solution or algorithm is programming language independent.
 
-When coding or implementing the algorithm in a specific programming language like Python, we use data type like int, string, list which are supported by the language. Different programming language provides different builtin data types. Java has a few of List data type: ArrayList, AttributeList, LinkedList, Stack, and so on. We can implement more advanced data structure by using the builtin date types.
+When coding or implementing the algorithm in a specific programming language like Python, we use data type like int, string, list which are supported by the language. Different programming language provides different builtin data types. Java has a few of linear data type: Array, ArrayList, AttributeList, LinkedList, Stack, and so on. We can implement more advanced data structure by using the builtin date types.
 
-So they are used in different context and don’t feel confused.
+List could mean a dynamic array as a data structure but it is one Python collection data type. The name is same but it is used in different context and has different meaning.
 -->
 
 ---
@@ -834,7 +866,6 @@ As stack is LIFO we cannot insert and delete random element.
 -->
 
 ---
-
 
 # Linked List
 
@@ -1369,8 +1400,9 @@ Height: edges in longest path from the node to the leaf
 <img src="/images/tree.png" style="height: 80%" />
 
 ---
-layout: center
----
+
+## layout: center
+
 # Summary
 
 ---
@@ -1602,7 +1634,7 @@ layout: center
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   download and install Anaconda
 -   create and Activate your Anaconda Python env
@@ -1707,12 +1739,24 @@ layout: center
 
 # Lab1
 
-#### Install and setup VS Code
+#### <logos-visual-studio-code/> VS Code
 
 <br/>
 
 > VS Code now fully integrated with Jupyter notebook, refer to this link:  
 > <i class="fas fa-external-link-alt"></i> [Jupyter Notebooks in VS Code](https://www.youtube.com/watch?v=Ozq24uAshXo)
+
+<br/>
+<br/>
+
+#### <simple-icons-googlecolab /> Google Colab
+
+<br/>
+
+> Google provides online Jupyter env:   
+> <i class="fas fa-external-link-alt"></i> [https://colab.research.google.com/](https://colab.research.google.com/)
+
+notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
 
 ---
 
@@ -1732,7 +1776,7 @@ layout: center
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   review Array, Stack, Queue
 -   exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
@@ -1883,7 +1927,7 @@ Implementation of CircularQueue class:
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   linear search, binary search
 -   review Singly Linked List, Doubly Linked List, Recursion
@@ -1926,7 +1970,7 @@ Implementation of CircularQueue class:
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   review Binary Tree and 4 traverse methods
 -   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
@@ -1999,7 +2043,7 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   exercise 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
 
@@ -2009,6 +2053,6 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <br/>
 
-<mdi-clipboard-list-outline /> 
+<mdi-clipboard-list-outline />
 
 -   exercise 📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)

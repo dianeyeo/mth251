@@ -1,5 +1,10 @@
 .history
 
+# jupyter
+*/.ipynb_checkpoints/*
+*/__pycache__/*
+*/.jupyter_releaser_checkout
+
 # mac
 .DS_Store
 
