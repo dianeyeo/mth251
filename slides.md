@@ -734,7 +734,7 @@ By definition, stack is a linear data structure that stores data in such a way t
 
 ---
 
-## Stack: Operations
+# Stack: Operations
 
 <br/>
 
@@ -810,7 +810,7 @@ As stack is LIFO we cannot insert and delete random element.
 
 ---
 
-## Queue: Operations
+# Queue: Operations
 
 <br/>
 
@@ -1101,7 +1101,7 @@ It is ALWAYS possible to convert a recursion implementation into iterative/loop 
 
 ---
 
-## Recursive Call
+# Recursive Call
 
 <br/>
 <br/>
@@ -1229,7 +1229,7 @@ Height: edges in longest path from the node to the leaf
 
 <br/>
 
--   One one root
+-   One root
 
 -   Max 2 child nodes
 
@@ -1400,9 +1400,8 @@ Height: edges in longest path from the node to the leaf
 <img src="/images/tree.png" style="height: 80%" />
 
 ---
-
-## layout: center
-
+layout: center
+---
 # Summary
 
 ---
@@ -1753,7 +1752,7 @@ Height: edges in longest path from the node to the leaf
 
 <br/>
 
-> Google provides online Jupyter env:   
+> Google provides online Jupyter env:  
 > <i class="fas fa-external-link-alt"></i> [https://colab.research.google.com/](https://colab.research.google.com/)
 
 notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
@@ -1769,6 +1768,7 @@ notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://git
 -   Python data type
 -   Python program structure
 -   OO
+-   Big O
 
 ---
 
