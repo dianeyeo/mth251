@@ -285,7 +285,11 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 -   <kbd>override</kbd> <span class="norm">vs.</span> <kbd>overload</kbd> <span class="norm">vs.</span> <kbd>overwrite</kbd>
 
 <!--
-There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste). OO is invented to simulate how the real world works. We put logic and data together inside the object. FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven.
+There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste). 
+
+OO is invented to simulate how the real world works. We put logic and data together inside the object. 
+
+FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven. Function has no state, just logic, consistent input and output. Unlike OO, when putting different objects together, deveopers have to take the responsible to debug, reuse, and maintain the whole software. Software built with FP is relatively testable and reliable.  
 -->
 
 ---
@@ -313,7 +317,13 @@ There are 3 programming paradigms. In early days, there was only procedural prog
 
     ![LEGB](/images/LEGB.png)
 
+-   memory, copy vs. deepcopy 
+
 -   help
+
+Cheatsheet:  
+  🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)  
+  🧾&nbsp;&nbsp;[Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 <!--
 
@@ -353,9 +363,7 @@ LEGB rule — a rule that defines the order of scopes following which a Python i
 
 <logos-youtube-icon />&nbsp;&nbsp;[Learn Python - Full Course for Beginners Tutorial](https://www.youtube.com/watch?v=rfscVS0vtbw)
 
-Cheatsheet:  
-🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)  
-🧾&nbsp;&nbsp;[Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
+<span class="hl-color">[The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)</span>
 
 <style>
 p {
