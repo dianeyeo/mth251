@@ -221,10 +221,7 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 - list []: a collection of items, usually the items all have the same type
   
-  - sequence type
-  - sortable
-  - grow and shrink as needed
-  - most widely used
+  - sequence type, sortable, grow and shrink as needed, most widely used
 
 - tuple (): a collection which is ordered and unchangeable
 
@@ -318,8 +315,8 @@ FP as the name suggested, we describe the logic using function and attach functi
 <logos-jupyter />
 
 - Namespaces & Scopes: <kbd>LEGB</kbd> rule
-  
-  ![LEGB](/images/LEGB.png)
+
+<img src="/images/LEGB.png" style="height:25%"/>  
 
 - memory, copy vs. deepcopy 
 
