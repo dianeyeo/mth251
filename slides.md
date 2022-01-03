@@ -719,6 +719,13 @@ When we append, insert & delete, we touch not just a single element.
 
 Memory is still a limited resource, the actual implementation of dynamic array has to take it into consideration. And memory management is a very complicated problem.
 
+This over-allocates proportional to the list size, making room for additional growth. The over-allocation is mild but is enough to give linear-time amortized behavior over a long sequence of appends() in the presence of a poorly-performing system realloc().
+
+The growth pattern is: 0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...
+
+Note: new_allocated won't overflow because the largest possible value is PY_SSIZE_T_MAX * (9 / 8) + 6 which always fits in a size_t.
+
+
 -->
 
 ---
@@ -1410,7 +1417,6 @@ Height: edges in longest path from the node to the leaf
 <img src="/images/tree.png" style="height: 80%" />
 
 ---
-
 layout: center
 ---
 
@@ -1791,6 +1797,7 @@ notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://git
 <mdi-clipboard-list-outline />
 
 - review Array, Stack, Queue
+- review Python copy vs. deepcopy
 - exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
 - priority queue
 - circular queue
@@ -1941,8 +1948,8 @@ Implementation of CircularQueue class:
 
 <mdi-clipboard-list-outline />
 
-- linear search, binary search
 - review Singly Linked List, Doubly Linked List, Recursion
+- review linear search, binary search
 - exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
 
 ---
@@ -2057,7 +2064,7 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <mdi-clipboard-list-outline />
 
-- exercise 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
+- let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
 
 ---
 
