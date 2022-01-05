@@ -516,7 +516,7 @@ Data structure is our building blocks for algorithm, so when using these data st
 | $O(n!)$:       | factorial              |
 
 <!--
-Big-O indicating the complexity level not the exact number of operations or the exact size of space)
+Big-O indicating the complexity level not the exact number of operations or the exact size of space
 -->
 
 ---
