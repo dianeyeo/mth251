@@ -43,8 +43,8 @@ Data Structures and Algorithms I
 
 <p class="norm">
 1. Python, Complexity & Big O<br/>
-2. Array, Stack, Queue<br/>
-3. Linked List, Recursion, Binary Search<br/> 
+2. Array, Stack, Queue, Recursion<br/>
+3. Linked List, Lineary Search, Binary Search<br/> 
 4. Tree<br/> 
 5. Algorithm Design & Pattern<br/> 
 6. Review
@@ -69,7 +69,7 @@ Data Structures and Algorithms I
 
 ---
 
-# Learning Resource
+# Slides & Notebooks
 
 <br/>
 
@@ -178,20 +178,20 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 <logos-jupyter />
 
-- numbers: <kbd>int</kbd> <kbd>float</kbd> <kbd>complex</kbd>
-  
-  - arithmetic operator: <kbd>+</kbd> <kbd>-</kbd> <kbd>\*</kbd> <kbd>/</kbd> <kbd>//</kbd> <kbd>%</kbd> <kbd>\*\*</kbd>
-  - bitwise operator: <kbd>&</kbd> <kbd>|</kbd> <kbd>^</kbd> <kbd>>></kbd> <kbd><<</kbd> <kbd>~</kbd>
-  - <kbd>range()</kbd>: a list of integers
+-   numbers: <kbd>int</kbd> <kbd>float</kbd> <kbd>complex</kbd>
 
-- strings: <kbd>''</kbd> <kbd>""</kbd> <kbd>\'</kbd> <kbd>\"</kbd> <kbd>\t</kbd> <kbd>\n</kbd> <kbd>\r</kbd> <kbd>\\\\</kbd> <span class="norm">etc.</span>
-  
-  - <kbd>join()</kbd> <kbd>split()</kbd> <kbd>ljust()</kbd> <kbd>rjust()</kbd> <kbd>lower()</kbd> <kbd>upper()</kbd> <kbd>lstrip()</kbd> <kbd>rstrip()</kbd> <kbd>strip()</kbd> <span class="norm">etc.</span>
+    -   arithmetic operator: <kbd>+</kbd> <kbd>-</kbd> <kbd>\*</kbd> <kbd>/</kbd> <kbd>//</kbd> <kbd>%</kbd> <kbd>\*\*</kbd>
+    -   bitwise operator: <kbd>&</kbd> <kbd>|</kbd> <kbd>^</kbd> <kbd>>></kbd> <kbd><<</kbd> <kbd>~</kbd>
+    -   <kbd>range()</kbd>: a list of integers
 
-- boolean: <kbd>True</kbd> <kbd>False</kbd>
-  
-  - True: <span class="norm">non-zero number, non-empty string, non-empty list </span>
-  - False: <span class="norm">0, 0.0, "", [], None</span>
+-   strings: <kbd>''</kbd> <kbd>""</kbd> <kbd>\'</kbd> <kbd>\"</kbd> <kbd>\t</kbd> <kbd>\n</kbd> <kbd>\r</kbd> <kbd>\\\\</kbd> <span class="norm">etc.</span>
+
+    -   <kbd>join()</kbd> <kbd>split()</kbd> <kbd>ljust()</kbd> <kbd>rjust()</kbd> <kbd>lower()</kbd> <kbd>upper()</kbd> <kbd>lstrip()</kbd> <kbd>rstrip()</kbd> <kbd>strip()</kbd> <span class="norm">etc.</span>
+
+-   boolean: <kbd>True</kbd> <kbd>False</kbd>
+
+    -   True: <span class="norm">non-zero number, non-empty string, non-empty list </span>
+    -   False: <span class="norm">0, 0.0, "", [], None</span>
 
 ---
 
@@ -199,15 +199,15 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 <logos-jupyter />
 
-- boolean: <kbd>True</kbd> <kbd>False</kbd>
-  
-  - logic operator: <kbd>and</kbd> <kbd>or</kbd> <kbd>not</kbd>
-  - comparison operator: <kbd>></kbd> <kbd><</kbd> <kbd>>=</kbd> <kbd><=</kbd> <kbd>==</kbd> <kbd>！=</kbd>
-  - identity operator: <kbd>is</kbd> <kbd>is not</kbd>
+-   boolean: <kbd>True</kbd> <kbd>False</kbd>
 
-- None
+    -   logic operator: <kbd>and</kbd> <kbd>or</kbd> <kbd>not</kbd>
+    -   comparison operator: <kbd>></kbd> <kbd><</kbd> <kbd>>=</kbd> <kbd><=</kbd> <kbd>==</kbd> <kbd>！=</kbd>
+    -   identity operator: <kbd>is</kbd> <kbd>is not</kbd>
 
-- type conversion/casting: <kbd>int()</kbd> <kbd>float()</kbd> <kbd>str()</kbd> <kbd>bool()</kbd> <kbd>hex()</kbd> <kbd>ord()</kbd>
+-   None
+
+-   type conversion/casting: <kbd>int()</kbd> <kbd>float()</kbd> <kbd>str()</kbd> <kbd>bool()</kbd> <kbd>hex()</kbd> <kbd>ord()</kbd>
 
 ---
 
@@ -215,36 +215,19 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 <logos-jupyter />
 
-- collections: <kbd>list</kbd> <kbd>tuple</kbd> <kbd>set</kbd> <kbd>dictionary</kbd>
-  
-  - membership operator: <kbd>in</kbd> <kbd>not in</kbd>
+-   collections: <kbd>list</kbd> <kbd>tuple</kbd> <kbd>set</kbd> <kbd>dictionary</kbd>
 
-- list []: a collection of items, usually the items all have the same type
-  
-  - sequence type, sortable, grow and shrink as needed, most widely used
+    -   membership operator: <kbd>in</kbd> <kbd>not in</kbd>
 
-- tuple (): a collection which is ordered and unchangeable
+-   list []: a collection of items, usually the items all have the same type
 
-- set {}: a collection which is unordered and unindexed
+    -   sequence type, sortable, grow and shrink as needed, most widely used
 
-- dictionary: a set of <kbd>key: value</kbd> pairs, unordered, changeable and indexed
+-   tuple (): a collection which is ordered and unchangeable
 
----
+-   set {}: a collection which is unordered and unindexed
 
-# Python Program Structure
-
-<logos-jupyter />
-
-- variable
-
-- statement & comments
-  
-  - Python uses new lines to complete a command, as opposed to other programming languages often use <kbd>;</kbd> or <kbd>()</kbd>；relies on indentation (<span class="uline">whitespace sensitive</span>), to define scope, such as the scope of loops, functions and classes, as opossed to other programming languages often use <kbd>{}</kbd>
-
-- control flow
-  
-  - <kbd>if ... elif ... else</kbd>
-  - <kbd>while</kbd> <kbd>for</kbd> <kbd>break</kbd> <kbd>continue</kbd>
+-   dictionary: a set of <kbd>key: value</kbd> pairs, unordered, changeable and indexed
 
 ---
 
@@ -252,19 +235,36 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 <logos-jupyter />
 
-- function
-  
-  - <kbd>def</kbd> <kbd>return</kbd>
-  - <kbd>_main_</kbd>
-  - advanced:
-    - lambda
-    - decorator
-    - closure
+-   variable
 
-- error/exception
-  
-  - handling exception: <kbd>try ... except ... else ... finally</kbd>
-  - raise execption: <kbd>raise</kbd>
+-   statement & comments
+
+    -   Python uses new lines to complete a command, as opposed to other programming languages often use <kbd>;</kbd> or <kbd>()</kbd>；relies on indentation (<span class="uline">whitespace sensitive</span>), to define scope, such as the scope of loops, functions and classes, as opossed to other programming languages often use <kbd>{}</kbd>
+
+-   control flow
+
+    -   <kbd>if ... elif ... else</kbd>
+    -   <kbd>while</kbd> <kbd>for</kbd> <kbd>break</kbd> <kbd>continue</kbd>
+
+---
+
+# Python Program Structure
+
+<logos-jupyter />
+
+-   function
+
+    -   <kbd>def</kbd> <kbd>return</kbd>
+    -   <kbd>_main_</kbd>
+    -   advanced:
+        -   lambda
+        -   decorator
+        -   closure
+
+-   error/exception
+
+    -   handling exception: <kbd>try ... except ... else ... finally</kbd>
+    -   raise execption: <kbd>raise</kbd>
 
 ---
 
@@ -272,24 +272,24 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 <logos-jupyter />
 
-- <kbd>Procedural</kbd> <span class="norm">vs.</span> <kbd>OOP</kbd> <span class="norm">vs.</span> <kbd>FP</kbd>
+-   <kbd>Procedural</kbd> <span class="norm">vs.</span> <kbd>OOP</kbd> <span class="norm">vs.</span> <kbd>FP</kbd>
 
-- OO Principal
-  
-  - <kbd>Inherience</kbd>
-  - <kbd>Encapsulation</kbd>
-  - <kbd>Polymorphism</kbd>
+-   OO Principal
 
-- class, instance, attributes, properties, method
+    -   <kbd>Inherience</kbd>
+    -   <kbd>Encapsulation</kbd>
+    -   <kbd>Polymorphism</kbd>
 
-- <kbd>override</kbd> <span class="norm">vs.</span> <kbd>overload</kbd> <span class="norm">vs.</span> <kbd>overwrite</kbd>
+-   class, instance, attributes, properties, method
+
+-   <kbd>override</kbd> <span class="norm">vs.</span> <kbd>overload</kbd> <span class="norm">vs.</span> <kbd>overwrite</kbd>
 
 <!--
-There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste). 
+There are 3 programming paradigms. In early days, there was only procedural programming - program is written in a step by step manner, no magic, no fancy stuff. While it is very naive approach ans still used nowadays, it has some shotcomings: hard to read, hard to reuse (copy and paste).
 
-OO is invented to simulate how the real world works. We put logic and data together inside the object. 
+OO is invented to simulate how the real world works. We put logic and data together inside the object.
 
-FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven. Function has no state, just logic, consistent input and output. Unlike OO, when putting different objects together, deveopers have to take the responsible to debug, reuse, and maintain the whole software. Software built with FP is relatively testable and reliable.  
+FP as the name suggested, we describe the logic using function and attach function to the data, data-driven instead of process-driven. Function has no state, just logic, consistent input and output. Unlike OO, when putting different objects together, deveopers have to take the responsible to debug, reuse, and maintain the whole software. Software built with FP is relatively testable and reliable.
 -->
 
 ---
@@ -298,15 +298,15 @@ FP as the name suggested, we describe the logic using function and attach functi
 
 <logos-jupyter />
 
-- modular programming: <kbd>function</kbd> → <kbd>class</kbd> → <kbd>module</kbd> → <kbd>package</kbd>
+-   modular programming: <kbd>function</kbd> → <kbd>class</kbd> → <kbd>module</kbd> → <kbd>package</kbd>
 
-- Modules: Python module (default main module), C module, Build-in module
+-   Modules: Python module (default main module), C module, Build-in module
 
-- Packages:
+-   Packages:
 
 ![pkg](/images/pkg.png)
 
-- Standard Lib: <kbd>math</kbd> <kbd>random</kbd> <kbd>re</kbd> <kbd>os</kbd> <kbd>itertools</kbd> <kbd>collections</kbd>
+-   Standard Lib: <kbd>math</kbd> <kbd>random</kbd> <kbd>re</kbd> <kbd>os</kbd> <kbd>itertools</kbd> <kbd>collections</kbd>
 
 ---
 
@@ -314,17 +314,17 @@ FP as the name suggested, we describe the logic using function and attach functi
 
 <logos-jupyter />
 
-- Namespaces & Scopes: <kbd>LEGB</kbd> rule
+-   Namespaces & Scopes: <kbd>LEGB</kbd> rule
 
-<img src="/images/LEGB.png" style="height:25%"/>  
+<img src="/images/LEGB.png" style="height:25%"/>
 
-- memory, copy vs. deepcopy 
+-   memory, copy vs. deepcopy
 
-- help
+-   help
 
 Cheatsheet:  
-  🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)  
-  🧾&nbsp;&nbsp;[Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
+ 🧾&nbsp;&nbsp;[Python Crash Course - Cheat Sheets](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf)  
+ 🧾&nbsp;&nbsp;[Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 <!--
 
@@ -374,7 +374,7 @@ p {
 
 ---
 
-# Data Structure & Algorithms
+# Data Structure & Algorithms (DSA)
 
 <br/>
 
@@ -387,36 +387,61 @@ Algorithms provides computer step by step instructions to process the informatio
 <br/>
 
 <pre class="norm">
-    -   Finiteness
-    -   Definiteness
-    -   Effectiveness
     -   Input
     -   Output
+    -   Definiteness
+    -   Effectiveness
+    -   Finiteness
+
 </pre>
 
 <!--
 A data structure is a data organization, managment, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
 
 An algorithm is a sequence of instructions, typically to solve a class of problems or perform a computation. Algorithms are unambiguous specifications for performing calculation, data processing, automated reasoing and other tasks.
+
+algorithm:
+  - precise input & output
+  - clear and unambigurous steps
+  - no unnecessary and redundant steps
+  - must stop eventually and give expected output
+DSA is by computer, for computer
 -->
 
 ---
 
 # Data Structure & Algorithms
 
-Example1:
+Example: keyword searching
+
+<div grid="~ cols-2 gap-8">
+  <div>
+    <p><span class="hl-strong">Data Structure</span>: index</p>
+    <p><span class="hl-strong">Algorithm</span>: looking up the page no.</p>
+  </div>
+  <div>
+    <img src="/images/book_index.png" style="width: 70%;"/>
+  </div> 
+</div>
 
 ---
 
 # Data Structure & Algorithms
 
-Example2:
+Example: adding two vectors
 
-<!--
-Why learn DSA?
-- You will write code that is both time and momory efficient
-- job coding interview
--->
+<div grid="~ cols-2 gap-8">
+  <div>
+    <p><span class="hl-strong">Data Structure</span>: complex number</p>
+    <p><span class="hl-strong">Algorithm</span>: adding two complex numbers</p>
+    <pre class="norm">
+      a + b = (x + yi) + (u + vi) = (x + u) + (y + v)i
+    </pre>
+  </div>
+  <div>
+    <img src="/images/vector_add.png" style="width: 70%;"/>
+  </div> 
+</div>
 
 ---
 
@@ -424,14 +449,14 @@ Why learn DSA?
 
 Data Structure
 
-- Linear
-  - Array, String, Linked List
-  - Stack, Queue, Deque, Set, Map/Hash, etc.
-- Non-Linear
-  - Tree, Graph
-  - Binary Search Tree, Red-Black Tree, AVL, Heap, Disjoin Set, Trie, etc.
-- Others
-  - Bitwise, BloomFilter, LRU Cache
+-   Linear
+    -   Array, String, Linked List
+    -   Stack, Queue, Deque, Set, Map/Hash, etc.
+-   Non-Linear
+    -   Tree, Graph
+    -   Binary Search Tree, Red-Black Tree, AVL, Heap, Disjoin Set, Trie, etc.
+-   Others
+    -   Bitwise, BloomFilter, LRU Cache
 
 ---
 
@@ -439,15 +464,15 @@ Data Structure
 
 Algorithms
 
-- branching: if-else, switch
-- iteration: for, while loop
-- recursion: divide & conquer, backtrace
-  <br/>
-- searching: binary search, depth first, breath first, A\*, etc.
-- sorting: quick sort, bubble sort, merge sort, etc.
-- dynamic programming
-- greedy
-- ...
+-   branching: if-else, switch
+-   iteration: for, while loop
+-   recursion: divide & conquer, backtrace
+    <br/>
+-   searching: binary search, depth first, breath first, A\*, etc.
+-   sorting: quick sort, bubble sort, merge sort, etc.
+-   dynamic programming
+-   greedy
+-   ...
 
 ---
 
@@ -461,7 +486,7 @@ Algorithms
 ✓ deeper understanding of computer system  <br/>
 ✓ improve coding skill  <br/>
 ✓ coding interview  <br/>
-✓ building framework and library  
+✓ building powerful framework and library  
 </p>
 
 <span class="hl-color">How</span>
@@ -474,23 +499,33 @@ Algorithms
 
 # Algorithm Complexity Analysis
 
-Performance
+<logos-jupyter />
 
-- cpu, memory, io, networking, etc.
-- worst case, avg case, best case
-- data.size()
-- no. of lines
-- ...
+How to measure Performance/Efficiency ?
+
+-   cpu, memory, io, networking, etc.
+-   no. of lines
+-   worst case vs. best case
+-   data.size()
+-   ...
 
 ---
 
 # Algorithm Complexity Analysis
 
-- <span class="hl-strong">Time Complexity</span> : by giving the size of the data set as integer N, consider the number of operations that need to be conducted by computer before the algorithm can finish
+<br/>
 
-- <span class="hl-strong">Space Complexity</span> : by giving the size of the data set as integer N, consider the size of extra space that need to be allocated by computer before the algorithm can finish
+<span class="hl-strong">Time Complexity</span> : by giving the size of the data set as integer N, consider the number of operations that need to be conducted by computer before the algorithm can finish
 
-- When: Accessing, Searching, Inserting, Deleting
+<span class="hl-strong">Space Complexity</span> : by giving the size of the data set as integer N, consider the size of extra space that need to be allocated by computer before the algorithm can finish
+
+Good code:
+
+✔ readability  
+✔ speed  
+✔ memory
+
+👉 When: Accessing, Searching, Inserting, Deleting, .....
 
 <!--
 Algorithm is a step by step pragmatic instruction to computer to solve problem
@@ -504,19 +539,41 @@ Data structure is our building blocks for algorithm, so when using these data st
 
 # Big-O
 
-> _Big-O describes the trend of algorithm performance when the data size increases_
+<logos-jupyter />
 
-|                |                        |
-| --------------:|:---------------------- |
-| $O(1)$:        | constant complexity    |
-| $O(\log_* n)$: | logarithmic complexity |
-| $O(n)$:        | constant complexity    |
-| $O(n^2)$:      | N square complexity    |
-| $O(2^n)$:      | exponential complexity |
-| $O(n!)$:       | factorial              |
+<p class="hl">
+Lef f(n) and g(n) be functions from positive integers to positive integers to positive  
+reals <br/>
+f = O(g) if there is a constant c > 0 such that f(n) ≦ c·g(n) for large n
+</p>
+
+<p class="norm"><i class="far fa-comment-dots"></i> f(n) <span class="uline">grows no faster</span> than g(n)</p>
+
+<span class="norm">e.g.</span>  
+$f(n) = O(3n^2 + 4n + 5) → O(n^2) → g(n) = n^2$  
+$O(3n^2 + 4n + 5) = O(n^2)$
+
+> _Big-O describes trend of algorithm performance when the data size increases_
+
+---
+
+# Big-O
+
+|                |                   |
+| -------------: | :---------------- |
+|        $O(1)$: | constant          |
+| $O(\log_* n)$: | logarithmic       |
+|        $O(n)$: | linear            |
+|  $O(nlog_*n)$: | n \* linearithmic |
+|      $O(n^2)$: | polynomial        |
+|      $O(2^n)$: | exponential       |
+|       $O(n!)$: | factorial         |
 
 <!--
 Big-O indicating the complexity level not the exact number of operations or the exact size of space
+
+How to Determine Complexities
+
 -->
 
 ---
@@ -531,11 +588,15 @@ $O(f) = f$
 $O(c·f) = O(f)$  
 $O(f+g) = O(max(f, g))$  
 $O(f)·O(g) = O(f·g)$  
-$O(f·g) \leq O(f·h)$ if & only if $O(g) \leq O(h)$  
-$O(x^a) \leq O(x^b)$ if & only if $a \leq b$  
-$O(a^x) \lt O(b^x)$ if & only if if $a \lt b$  
-$O(x^a) \lt O(b^x)$ if & only if if $d \gt 1$ (assuming $c \geq 1$ and $d \geq 1$)  
-$O(log_* x) \lt O(x^c)$ if & only if if $c \gt 0$
+$O(f·g) \leq O(f·h)$ <span class="norm">if & only if</span> $O(g) \leq O(h)$  
+$O(x^a) \leq O(x^b)$ <span class="norm">if & only if</span> $a \leq b$  
+$O(a^x) \lt O(b^x)$ <span class="norm">if & only if </span> $a \lt b$  
+$O(x^c) \lt O(d^x)$ <span class="norm">if & only if </span> $d \gt 1$ (assuming $c \geq 1$ and $d \geq 1$)  
+$O(log_* x) \lt O(x^c)$ <span class="norm">if & only if</span> $c \gt 0$
+
+<!--
+O(logN) = O(log2N)
+-->
 
 ---
 
@@ -543,11 +604,11 @@ $O(log_* x) \lt O(x^c)$ if & only if if $c \gt 0$
 
 <br/>
 
-<mdi-file-code /> [https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)
-
-$O(1) < O(\log_* n) < O(n) < O(n\log_* n) < O(n^2) < O(2^n) < O(n!)$
+😊 $O(1) < O(\log_* n) < O(n) < O(n\log_* n) < O(n^2) < O(2^n) < O(n!)$ 🥵
 
 <img src="/images/bigo-chart.jpeg" style="width:50%"/>
+
+<span class="norm"><mdi-file-code /> [https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)</span>
 
 ---
 
@@ -570,9 +631,9 @@ Each item in the array referred as “<span class="hl">element</span>”
 
 <br/>
 
-- Element Type: same type (array is structured data)
+-   Element Type: same type (array is structured data)
 
-- Element Size: fixed
+-   Element Size: fixed
 
 ```java
 # java
@@ -584,7 +645,7 @@ scores[0] = 90
 scores[1] = 80
 ```
 
-- Element Index: 0, 1, ..., length - 1
+-   Element Index: 0, 1, ..., length - 1
 
 ---
 
@@ -606,10 +667,10 @@ Students[1][2] → “S2222222B”
 <br/>
 
 | **Index** | **0** | **1** | **2**     |
-|:---------:|:----- |:-----:|:--------- |
-| **0**     | Alex  | M     | S1111111A |
-| **1**     | Bob   | M     | S2222222B |
-| **2**     | James | M     | S3333333C |
+| :-------: | :---- | :---: | :-------- |
+|   **0**   | Alex  |   M   | S1111111A |
+|   **1**   | Bob   |   M   | S2222222B |
+|   **2**   | James |   M   | S3333333C |
 
 ---
 
@@ -697,8 +758,8 @@ Programming language provides different <span class="hl-bg">data types</span> to
 
 i.e. Array
 
-- a linear abstract data type
-- a java data type
+-   a linear abstract data type
+-   a java data type
 
 <!--
 When studying algorithm, we use data structure such as Array, Dynamic Array, Linked List, as the solution or algorithm is programming language independent.
@@ -712,6 +773,32 @@ List could mean a dynamic array as a data structure but it is one Python collect
 
 # Dynamic Array
 
+<logos-jupyter />
+
+<div grid="~ cols-2 gap-4">
+  <div>
+    <p class="norm">- what is the good space size for an array?</p>
+    <p class="norm">- when is the good time to expand/shrink the array? </p>
+    
+  </div>  
+  <div align="center">
+    <img src="/images/dynamic_array.png" style="width: 80%"/>
+  </div> 
+</div>
+
+<br/>
+
+Growth Pattern:
+
+-   Python $0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...$ <br/>
+-   Java $((existing * 3) / 2) + 1$
+
+<br/>
+
+<p class="norm">
+👉 memory management is one of the biggest challenges to programmers. 
+</p>
+
 <!--
 You may wonder how to implement a dynamic array, in fact it can be implemented by a normal array.
 
@@ -721,9 +808,11 @@ Memory is still a limited resource, the actual implementation of dynamic array h
 
 This over-allocates proportional to the list size, making room for additional growth. The over-allocation is mild but is enough to give linear-time amortized behavior over a long sequence of appends() in the presence of a poorly-performing system realloc().
 
-The growth pattern is: 0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...
-
 Note: new_allocated won't overflow because the largest possible value is PY_SSIZE_T_MAX * (9 / 8) + 6 which always fits in a size_t.
+
+Objects/listobject.c:
+new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);
+
 
 
 -->
@@ -734,9 +823,9 @@ Note: new_allocated won't overflow because the largest possible value is PY_SSIZ
 
 <br/>
 
-- Sequential Access vs Random Access (such as Array)
+-   Sequential Access vs Random Access (such as Array)
 
-- <span class="hl-strong">LIFO</span> (Last In First Out) sequential collection
+-   <span class="hl-strong">LIFO</span> (Last In First Out) sequential collection
 
 <br/>
 
@@ -754,10 +843,10 @@ By definition, stack is a linear data structure that stores data in such a way t
 
 <br/>
 
-- <span class="hl-strong">push</span>() − pushing (storing) an element on the stack
-- <span class="hl-strong">pop</span>() − removing (accessing) an element from the stack
-- top()/peek() − get the top data element of the stack, without removing it
-- size(), isEmpty(), isFull()
+-   <span class="hl-strong">push</span>() − pushing (storing) an element on the stack
+-   <span class="hl-strong">pop</span>() − removing (accessing) an element from the stack
+-   top()/peek() − get the top data element of the stack, without removing it
+-   size(), isEmpty(), isFull()
 
 <br/>
 
@@ -818,7 +907,7 @@ As stack is LIFO we cannot insert and delete random element.
 
 <br/>
 
-- <span class="hl-strong">FIFO</span> (First In First Out) sequential collection
+-   <span class="hl-strong">FIFO</span> (First In First Out) sequential collection
 
 <br/>
 
@@ -830,10 +919,10 @@ As stack is LIFO we cannot insert and delete random element.
 
 <br/>
 
-- <span class="hl-strong">enqueue</span>() − adding (storing) an element to the queue
-- <span class="hl-strong">dequeue</span>() − removing (accessing) an element from the queue
-- fist()/peek() − get the first element of the queue, without removing it
-- size(), isEmpty(), isFull()
+-   <span class="hl-strong">enqueue</span>() − adding (storing) an element to the queue
+-   <span class="hl-strong">dequeue</span>() − removing (accessing) an element from the queue
+-   fist()/peek() − get the first element of the queue, without removing it
+-   size(), isEmpty(), isFull()
 
 <br/>
 
@@ -887,11 +976,11 @@ As stack is LIFO we cannot insert and delete random element.
 
 <br/>
 
-- dynamic linear data structure
+-   dynamic linear data structure
 
-- data stored in a “Node” class
+-   data stored in a “Node” class
 
-- data & pointer
+-   data & pointer
 
 <div grid="~ cols-2 gap-10">
   <div><img src="/images/ll_singly.png" style="width: 60%"/></div>
@@ -1026,8 +1115,8 @@ Let us look at this picture, data in our computer can be stored in different pla
 
 Recursion by definition is a function that calls itself.
 
-- base case
-- recursive case
+-   base case
+-   recursive case
 
 <br/>
 <br/>
@@ -1057,6 +1146,9 @@ Recursive case: reduce the original problem to a smaller version
 Every single recursion function must have at least 1 base case and 1 recursive case.
 
 To understand complicated concept like Recursion, its always good to start with example.
+
+Big(O) of Fibonacci - iterative vs. recursive
+
 -->
 
 ---
@@ -1122,11 +1214,11 @@ It is ALWAYS possible to convert a recursion implementation into iterative/loop 
 <br/>
 <br/>
 
-- Max call stack size (stack overflow error)
+-   Max call stack size (stack overflow error)
 
-- Tail Call Optimization
+-   Tail Call Optimization
 
-- Memorization
+-   Memorization
 
 ---
 
@@ -1137,12 +1229,12 @@ It is ALWAYS possible to convert a recursion implementation into iterative/loop 
 
 Fundamental technique to solve problem:
 
-- Identifying the base case
+-   Identifying the base case
 
-- Identifying the recursion formula/equation to transform the problem to smaller version
-  
-  - Problem requires back-tracking
-  - Problem has tree structure
+-   Identifying the recursion formula/equation to transform the problem to smaller version
+
+    -   Problem requires back-tracking
+    -   Problem has tree structure
 
 <!--
 Recursion is applied widely in many algorithms, so it is very important to master this technique.
@@ -1156,8 +1248,8 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 <br/>
 
-- Input: array, target element
-- Output: position (-1 if not existing)
+-   Input: array, target element
+-   Output: position (-1 if not existing)
 
 ---
 
@@ -1165,8 +1257,8 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 <br/>
 
-- Input: array, target element
-- Output: position (-1 if not existing)
+-   Input: array, target element
+-   Output: position (-1 if not existing)
 
 ---
 
@@ -1246,15 +1338,15 @@ Height: edges in longest path from the node to the leaf
 
 <br/>
 
-- One root
+-   One root
 
-- Max 2 child nodes
+-   Max 2 child nodes
 
-- One and only one path from root to each node
+-   One and only one path from root to each node
 
-- Max nodes on level: $2^l$
+-   Max nodes on level: $2^l$
 
-- Max nodes total: $2^{h+1} - 1$
+-   Max nodes total: $2^{h+1} - 1$
 
 ---
 
@@ -1647,20 +1739,20 @@ layout: center
 
 ---
 
-# Lab1
+# Lab 1
 
 <br/>
 
 <mdi-clipboard-list-outline />
 
-- download and install Anaconda
-- create and Activate your Anaconda Python env
-- (Optional) install and setup VS Code
-- familiar yourself with Python and do exercise 📝 [lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
+-   download and install Anaconda
+-   create and Activate your Anaconda Python env
+-   (Optional) install and setup VS Code
+-   familiar yourself with Python and do exercise 📝 [lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
 
 ---
 
-# Lab1
+# Lab 1
 
 #### Download and install Anaconda
 
@@ -1672,7 +1764,7 @@ layout: center
 
 ---
 
-# Lab1
+# Lab 1
 
 #### Create and Activate your Anaconda Python env
 
@@ -1698,7 +1790,7 @@ layout: center
 
 ---
 
-# Lab1
+# Lab 1
 
 #### Create and Activate your Anaconda Python env
 
@@ -1735,7 +1827,7 @@ layout: center
 
 ---
 
-# Lab1
+# Lab 1
 
 #### Create and Activate your Anaconda Python env
 
@@ -1754,7 +1846,7 @@ layout: center
 
 ---
 
-# Lab1
+# Lab 1
 
 #### <logos-visual-studio-code/> VS Code
 
@@ -1777,36 +1869,39 @@ notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://git
 
 ---
 
-# Lab1
+# Lab 1
 
 <br/>
 
 <span class="hl">lab1.ipynb</span>
 
-- Python data type
-- Python program structure
-- OO
-- Big O
+-   Python
+
+    1. Data Type & Operators
+    2. Collections
+    3. Program Structure
+    4. OO & Class
+
+-   Big O
 
 ---
 
-# Lab2
+# Lab 2
 
 <br/>
 
 <mdi-clipboard-list-outline />
 
-- review Array, Stack, Queue
-- review Python copy vs. deepcopy
-- exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
-- priority queue
-- circular queue
+-   review Array, Stack, Queue, Recursion
+-   exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
+-   priority queue
+-   circular queue
 
 ---
 
-# Lab2
+# Lab 2
 
-#### Exercise 1: two sum
+#### Exercise: two sum
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -1835,9 +1930,265 @@ p {
 
 ---
 
-# Lab2
+# Lab 2
 
-#### Exercise 2: remove duplicate numbers
+#### Exercise: valid parentheses
+
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+-   Open brackets must be closed by the same type of brackets.
+-   Open brackets must be closed in the correct order.
+
+Example 1  
+Input: s = "()[]{}" Output: true  
+Example 2  
+Input: s = "(]" Output: false  
+Example 3  
+Input: s = "([)]" Output: false  
+Example 4  
+Input: s = "{[]}" Output: true
+
+<style>
+p {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+</style>
+
+---
+
+# Lab 2
+
+<br/>
+
+<span class="hl-bg">Priority Queue</span> is similar to queue but the element with higher priority can be moved forward to the front. Use exiting Queue class to implement a priority queue (element with lower value has higher priority).
+
+<pre class="norm">
+<i class="far fa-sticky-note"></i> Priority Queue can be used in Printer Jobs or Schedule Tasks.
+</pre>
+
+---
+
+# Lab 2
+
+<br/>
+
+<span class="hl-bg">Circular Queue</span> is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer".
+
+Design your implementation of circular queue.
+
+---
+
+# Lab 2
+
+#### Circular Queue
+
+<br/>
+
+<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
+  <div class="norm">1. init</div>
+  <div><img src="/images/lab/cq1_init.png" style="height: 90px"/></div>
+  <div class="norm">2. enqueue D1</div>
+  <div><img src="/images/lab/cq2.png" style="height: 90px"/></div>  
+  <div class="norm">3. enqueue D2, D3, D4 and dequeue D1</div>
+  <div><img src="/images/lab/cq3.png" style="height: 90px"/></div>
+</div>
+
+---
+
+# Lab 2
+
+#### Circular Queue
+
+<br/>
+
+<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
+  <div class="norm">4. enqueue D5, D6, D7, D8</div>
+  <div><img src="/images/lab/cq4.png" style="height: 90px"/></div>
+  <div class="norm">5. dequeue D2, D3, D4, D5 and enqueue D9, D10</div>
+  <div><img src="/images/lab/cq5.png" style="height: 90px"/></div> 
+</div>
+
+---
+
+# Lab 2
+
+#### Circular Queue
+
+<br/>
+
+<div class="norm">
+<i class="far fa-sticky-note"></i> One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue (and it does not prevent the program accidentally creates a large queue or stack and use up the memory).
+</div>
+
+Implementation of CircularQueue class:
+
+<div class="norm">
+  <ul>
+    <li><strong>enqueue</strong>(): insert the element</li>
+    <li><strong>dequeue</strong>(): delete the element</li>
+    <li><strong>front</strong>(): return the first element in the queue, if queue is empty, return None</li>
+    <li><strong>rear</strong>(): return the last element in the queue, if queue is empty, return None</li>
+    <li><strong>is_empty</strong>(): return true if queue is empty</li>
+    <li><strong>is_full</strong>(): return true if queue is full</li>
+  </ul>
+</div>
+
+---
+
+# Lab 3
+
+<br/>
+
+<mdi-clipboard-list-outline />
+
+-   Python (lab1)  
+    5. misc.  
+    6. PEP8
+-   review Singly Linked List, Doubly Linked List
+-   review linear search, binary search
+-   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
+
+---
+
+# Lab 3
+
+### lineary search & binary search
+
+<br/>
+
+<span class="norm">
+
+1. Go to [https://www.cs.usfca.edu/~galles/visualization/Search.html]([https://www.cs.usfca.edu/~galles/visualization/Search.html]) to understand how Linear Search & Binary Search is working
+
+2. Implement Linear Search & Binary Search in Python by yourself:
+
+-   familiar with Python coding style
+-   understand the input, output, steps and ending condition
+-   learn and compare different approaches (time & space complexity)
+-   test code reliability with different cases
+
+</span>
+
+---
+
+# Lab 3
+
+<br/>
+
+-   implement Stack by linked list
+-   implement Queue by linked list
+-   reverse a linked list
+    -   recursive implementation
+    -   iterative implementation
+
+---
+
+# Lab 3
+
+#### Exercise: palindrome
+
+Implement a Python function to determines if a string is a palindrome, for example, ‘racecar’ and ‘level’ are palindromes
+
+<style>
+p {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+</style>
+
+---
+
+# Lab 4
+
+<br/>
+
+<mdi-clipboard-list-outline />
+
+-   review Binary Tree and 4 traverse methods
+-   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
+
+---
+
+# Lab 4
+
+#### Exercise: get maximum depth of binary tree
+
+<p class="norm">
+A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+</p>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p><i>For example: the maximum depth is 3</i></p>
+    <img src="/images/lab/tree_depth.png" style="width:50%"/>
+  </div>  
+  <div class="norm">
+
+</div> 
+</div>
+
+---
+
+# Lab 4
+
+#### Exercise: check a balanced binary tree
+
+<p class="norm">
+A binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+</p>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p><i>balanced = true:</i></p>
+    <img src="/images/lab/tree_balance_true.png" style="width:50%"/>
+  </div>  
+  <div class="norm">
+    <p><i>balanced = false:</i></p>
+    <img src="/images/lab/tree_balance_false.png" style="width:50%"/>
+  </div> 
+</div>
+
+---
+
+# Lab 4
+
+#### Exercise: check a complete binary tree
+
+<p class="norm">
+In a complete binary tree, every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
+</p>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p><i>complete = true:</i></p>
+    <img src="/images/lab/tree_complete_true.png" style="width:50%"/>
+  </div>  
+  <div class="norm">
+    <p><i>complete = false:</i></p>
+    <img src="/images/lab/tree_complete_false.png" style="width:50%"/>
+  </div> 
+</div>
+
+---
+
+# Lab 5
+
+<br/>
+
+<mdi-clipboard-list-outline />
+
+-   let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
+
+---
+
+# Lab 5
+
+#### Exercise: remove duplicate numbers
 
 Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
 
@@ -1863,215 +2214,10 @@ p {
 
 ---
 
-# Lab2
-
-<br/>
-
-<span class="hl-bg">Priority Queue</span> is similar to queue but the element with higher priority can be moved forward to the front. Use exiting Queue class to implement a priority queue (element with lower value has higher priority).
-
-<pre class="norm">
-<i class="far fa-sticky-note"></i> Priority Queue can be used in Printer Jobs or Schedule Tasks.
-</pre>
-
----
-
-# Lab2
-
-<br/>
-
-<span class="hl-bg">Circular Queue</span> is a linear data structure in which the operations are performed based on FIFO (First In First Out) principle and the last position is connected back to the first position to make a circle. It is also called "Ring Buffer".
-
-Design your implementation of circular queue.
-
----
-
-# Lab2
-
-#### Circular Queue
-
-<br/>
-
-<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
-  <div class="norm">1. init</div>
-  <div><img src="/images/lab/cq1_init.png" style="height: 90px"/></div>
-  <div class="norm">2. enqueue D1</div>
-  <div><img src="/images/lab/cq2.png" style="height: 90px"/></div>  
-  <div class="norm">3. enqueue D2, D3, D4 and dequeue D1</div>
-  <div><img src="/images/lab/cq3.png" style="height: 90px"/></div>
-</div>
-
----
-
-# Lab2
-
-#### Circular Queue
-
-<br/>
-
-<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
-  <div class="norm">4. enqueue D5, D6, D7, D8</div>
-  <div><img src="/images/lab/cq4.png" style="height: 90px"/></div>
-  <div class="norm">5. dequeue D2, D3, D4, D5 and enqueue D9, D10</div>
-  <div><img src="/images/lab/cq5.png" style="height: 90px"/></div> 
-</div>
-
----
-
-# Lab2
-
-#### Circular Queue
-
-<br/>
-
-<div class="norm">
-<i class="far fa-sticky-note"></i> One of the benefits of the circular queue is that we can make use of the spaces in front of the queue. In a normal queue, once the queue becomes full, we cannot insert the next element even if there is a space in front of the queue (and it does not prevent the program accidentally creates a large queue or stack and use up the memory).
-</div>
-
-Implementation of CircularQueue class:
-
-<div class="norm">
-  <ul>
-    <li><strong>enqueue</strong>(): insert the element</li>
-    <li><strong>dequeue</strong>(): delete the element</li>
-    <li><strong>front</strong>(): return the first element in the queue, if queue is empty, return None</li>
-    <li><strong>rear</strong>(): return the last element in the queue, if queue is empty, return None</li>
-    <li><strong>is_empty</strong>(): return true if queue is empty</li>
-    <li><strong>is_full</strong>(): return true if queue is full</li>
-  </ul>
-</div>
-
----
-
-# Lab3
+# Lab 6
 
 <br/>
 
 <mdi-clipboard-list-outline />
 
-- review Singly Linked List, Doubly Linked List, Recursion
-- review linear search, binary search
-- exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
-
----
-
-# Lab3
-
-### binary search
-
-<br/>
-
-<pre class="norm">
-1. Go to https://www.cs.usfca.edu/~galles/visualization/Search.html to understand how Linear Search & Binary Search is working
-
-2. Implement Linear Search & Binary Search in Python by yourself:
-
-  -   familiar with Python coding style
-  -   understand the input, output, steps and ending condition
-  -   learn and compare different approaches (time & space complexity)
-  -   test code reliability with different cases
-</pre>
-
----
-
-# Lab3
-
-<br/>
-
-- implement Stack by linked list
-- implement Queue by linked list
-- reverse a linked list
-  - recursive implementation
-  - iterative implementation
-
----
-
-# Lab4
-
-<br/>
-
-<mdi-clipboard-list-outline />
-
-- review Binary Tree and 4 traverse methods
-- exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
-
----
-
-# Lab4
-
-#### Exercise 1: get maximum depth of binary tree
-
-<p class="norm">
-A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-</p>
-
-<div grid="~ cols-2 gap-8">
-  <div class="norm">
-    <p><i>For example: the maximum depth is 3</i></p>
-    <img src="/images/lab/tree_depth.png" style="width:50%"/>
-  </div>  
-  <div class="norm">
-
-</div> 
-</div>
-
----
-
-# Lab4
-
-#### Exercise 2: check a balanced binary tree
-
-<p class="norm">
-A binary tree in which the left and right subtrees of every node differ in height by no more than 1.
-</p>
-
-<div grid="~ cols-2 gap-8">
-  <div class="norm">
-    <p><i>balanced = true:</i></p>
-    <img src="/images/lab/tree_balance_true.png" style="width:50%"/>
-  </div>  
-  <div class="norm">
-    <p><i>balanced = false:</i></p>
-    <img src="/images/lab/tree_balance_false.png" style="width:50%"/>
-  </div> 
-</div>
-
----
-
-# Lab4
-
-#### Exercise 3: check a complete binary tree
-
-<p class="norm">
-In a complete binary tree, every level, except possibly the last, is completely filled, and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
-</p>
-
-<div grid="~ cols-2 gap-8">
-  <div class="norm">
-    <p><i>complete = true:</i></p>
-    <img src="/images/lab/tree_complete_true.png" style="width:50%"/>
-  </div>  
-  <div class="norm">
-    <p><i>complete = false:</i></p>
-    <img src="/images/lab/tree_complete_false.png" style="width:50%"/>
-  </div> 
-</div>
-
----
-
-# Lab5
-
-<br/>
-
-<mdi-clipboard-list-outline />
-
-- let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
-
----
-
-# Lab6
-
-<br/>
-
-<mdi-clipboard-list-outline />
-
-- exercise 📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)
+-   📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)
