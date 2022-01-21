@@ -506,7 +506,7 @@ How to measure Performance/Efficiency ?
 -   cpu, memory, io, networking, etc.
 -   no. of lines
 -   worst case vs. best case
--   data.size()
+-   code slows as data grows
 -   ...
 
 ---
@@ -547,27 +547,27 @@ reals <br/>
 f = O(g) if there is a constant c > 0 such that f(n) ≦ c·g(n) for large n
 </p>
 
-<p class="norm"><i class="far fa-comment-dots"></i> f(n) <span class="uline">grows no faster</span> than g(n)</p>
+<p class="norm"><i class="far fa-comment-dots"></i> f(n) <span class="uline">grows no faster</span> than g(n) </p>
 
 <span class="norm">e.g.</span>  
-$f(n) = O(3n^2 + 4n + 5) → O(n^2) → g(n) = n^2$  
-$O(3n^2 + 4n + 5) = O(n^2)$
+$f(n) = O(4n^2 + 8n + 16) → O(n^2) → g(n) = n^2$  
+$O(4n^2 + 8n + 16) = O(n^2)$
 
-> _Big-O describes trend of algorithm performance when the data size increases_
+> _Big-O describes the trend of algorithm performance when the data size increases_
 
 ---
 
 # Big-O
 
-|                |                   |
-| -------------: | :---------------- |
-|        $O(1)$: | constant          |
-| $O(\log_* n)$: | logarithmic       |
-|        $O(n)$: | linear            |
-|  $O(nlog_*n)$: | n \* linearithmic |
-|      $O(n^2)$: | polynomial        |
-|      $O(2^n)$: | exponential       |
-|       $O(n!)$: | factorial         |
+|                |              |
+| -------------: | :----------- |
+|        $O(1)$: | constant     |
+| $O(\log_* n)$: | logarithmic  |
+|        $O(n)$: | linear       |
+|  $O(nlog_*n)$: | linearithmic |
+|      $O(n^2)$: | polynomial   |
+|      $O(2^n)$: | exponential  |
+|       $O(n!)$: | factorial    |
 
 <!--
 Big-O indicating the complexity level not the exact number of operations or the exact size of space
@@ -680,7 +680,7 @@ Students[1][2] → “S2222222B”
 str = "HELLO" = ['H', 'E', 'L', 'L', 'O']
 </pre>
 
-<img src="/images/array_address.png" style="width: 60%">
+<img src="/images/array_address.png" style="width: 60%" />
 
 <pre class="norm">
 data type: char  
@@ -710,70 +710,12 @@ Memory is a limited resource in programing and memory allocation is quite compli
 
 ---
 
-# Array Operations
-
-<div style="width: 70%">
-  <table class="ops">
-    <thead>
-      <tr>
-        <th id="">Operation</th>
-        <th id="">Array</th>
-        <th id="">Dynamic Array</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Accessing</th>
-          <td>O(1)</td>
-          <td>O(1)</td>
-        </tr>
-        <tr class="even">
-          <th>Searching</th>
-          <td>O(n)</td>
-          <td>O(1)</td>
-        </tr>
-        <tr class="odd">
-          <th>Inserting</th>
-          <td>-</td>
-          <td>O(n)</td>
-        </tr>
-        <tr class="even">
-          <th>Deleting</th>
-          <td>-</td>
-          <td>O(n)</td>
-        </tr>
-      </tbody>
-  </table>
-</div>
-
----
-
-# ADT vs. Data Structure
-
-<br/>
-
-An <span class="hl-bg">abstract data type</span> (ADT) is an abstraction of a <span class="hl-bg">data structure</span> which provides only the interface to which a data structure must adhere to. The interface does not give any specific details about how something should be implemented.
-
-Programming language provides different <span class="hl-bg">data types</span> to implement/represent different data structure.
-
-i.e. Array
-
--   a linear abstract data type
--   a java data type
-
-<!--
-When studying algorithm, we use data structure such as Array, Dynamic Array, Linked List, as the solution or algorithm is programming language independent.
-
-When coding or implementing the algorithm in a specific programming language like Python, we use data type like int, string, list which are supported by the language. Different programming language provides different builtin data types. Java has a few of linear data type: Array, ArrayList, AttributeList, LinkedList, Stack, and so on. We can implement more advanced data structure by using the builtin date types.
-
-List could mean a dynamic array as a data structure but it is one Python collection data type. The name is same but it is used in different context and has different meaning.
--->
-
----
-
 # Dynamic Array
 
 <logos-jupyter />
+
+<!--
+-->
 
 <div grid="~ cols-2 gap-4">
   <div>
@@ -790,8 +732,9 @@ List could mean a dynamic array as a data structure but it is one Python collect
 
 Growth Pattern:
 
--   Python $0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...$ <br/>
--   Java $((existing * 3) / 2) + 1$
+-   Python $0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...$
+-   Java $((size * 3) / 2) + 1$
+-   C# $size * 2$
 
 <br/>
 
@@ -814,7 +757,174 @@ Objects/listobject.c:
 new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);
 
 
+-->
 
+---
+
+# Array
+
+<div style="width: 70%">
+  <table class="ops">
+    <thead>
+      <tr>
+        <th id="">Operation</th>
+        <th id="">Array</th>
+        <th id="">Dynamic Array</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <th>Accessing</th>
+        <td>O(1)</td>
+        <td>O(1)</td>
+      </tr>
+      <tr class="even">
+        <th>Searching</th>
+        <td>O(n)</td>
+        <td>O(1)</td>
+      </tr>
+      <tr class="odd">
+        <th>Inserting</th>
+        <td>-</td>
+        <td>O(n)</td>
+      </tr>
+      <tr class="even">
+        <th>Deleting</th>
+        <td>-</td>
+        <td>O(n)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
+# Python Collection Complexity
+
+<div style="width: 100%">
+  <table class="ops">
+    <thead>
+      <tr>
+        <th id="" colspan="2">List [a, b, c, ...]</th>
+        <th id="" colspan="2">Dicts {k:v, ...}</th>
+        <th id="" colspan="2">Set {a, b, c,}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="even">
+        <th>mylist.append(val)</th>
+        <td>O(1)</td>
+        <th>mydict[key] = val</th>
+        <td>O(1)</td>
+        <th>myset.add(val)</th>
+        <td>O(1)</td>
+      </tr>
+      <tr class="even">
+        <th>mylist[i]</th>
+        <td>O(1)</td>
+        <th>mydict[key]</th>
+        <td>O(1)</td>
+        <th></th>
+        <td></td>
+      </tr>
+      <tr class="odd">
+        <th>val in mylist</th>
+        <td>O(N)</td>
+        <th>key in mydict</th>
+        <td>O(1)</td>
+        <th>val in myset</th>
+        <td>O(1)</td>
+      </tr>
+      <tr class="even">
+        <th>for val in mylist:</th>
+        <td>O(N)</td>
+        <th>for key in mydict:</th>
+        <td>O(N)</td>
+        <th>for val in myset:</th>
+        <td>O(N)</td>
+      </tr>
+      <tr class="even">
+        <th>mylist.sort()</th>
+        <td>O(NlogN)</td>
+        <th></th>
+        <td></td>
+        <th></th>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+    td:nth-child(1) {
+        width: 25%;
+    }
+    td:nth-child(2) {
+        width: 6%;
+    }
+    td:nth-child(3) {
+        width: 25%;
+    }
+    td:nth-child(4) {
+        width: 6%;
+    }
+    td:nth-child(5) {
+        width: 25%;
+    }
+    td:nth-child(6) {
+        width: 6%;
+    }
+</style>
+
+---
+
+# Trade-offs
+
+<br/>
+
+```python
+# .. make a list ..
+if thing in my_list: # O(N)
+
+# ✅ Good
+# .. make a set ..
+if thing in my_set:  # O(1)
+
+# ❌ Bad
+# .. make a list ..
+my_set = set(my_list) # O(N)
+if thing in my_set:   # O(1)
+
+# ✅ Good
+# .. make a list ..
+my_set = set(my_list) # O(N)
+for many_times: 
+  if thing in my_set:   # O(1)
+
+```
+
+---
+
+
+# ADT vs. Data Structure
+
+<br/>
+
+An <span class="hl-bg">abstract data type</span> (ADT) is an abstraction of a <span class="hl-bg">data structure</span> which provides only the interface to which a data structure must adhere to. The interface does not give any specific details about how something should be implemented.
+
+Programming language provides different <span class="hl-bg">data types</span> to implement/represent different data structure.
+
+i.e. Array
+
+-   a linear abstract data type
+-   a java data type
+
+<!--
+When studying algorithm, we use data structure such as Array, Dynamic Array, Linked List, as the solution or algorithm is programming language independent.
+
+When coding or implementing the algorithm in a specific programming language like Python, we use data type like int, string, list which are supported by the language. Different programming language provides different builtin data types. Java has a few of linear data type: Array, ArrayList, AttributeList, LinkedList, Stack, and so on. We can implement more advanced data structure by using the builtin date types.
+
+List could mean a dynamic array as a data structure but it is one Python collection data type. The name is same but it is used in different context and has different meaning.
 -->
 
 ---
@@ -861,31 +971,31 @@ Push & Pop are the 2 most important operations for stack. Push is to store an el
 
 ---
 
-# Stack Operations
+# Stack Complexity
 
 <div style="width: 50%">
   <table class="ops">
-    <thead>
-      <tr>
-        <th id="">Operation</th>
-        <th id="">Stack</th>
+      <thead>
+        <tr>
+          <th id="">Operation</th>
+          <th id="">Stack</th>
         </tr>
       </thead>
       <tbody>
         <tr class="odd">
-          <th>Accessing</th>
+          <td>Accessing</td>
           <td>O(n)</td>
         </tr>
         <tr class="even">
-          <th>Searching</th>
+          <td>Searching</td>
           <td>O(n)</td>
         </tr>
         <tr class="odd">
-          <th>Inserting</th>
+          <td>Inserting</td>
           <td>O(1)(push)</td>
         </tr>
         <tr class="even">
-          <th>Deleting</th>
+          <td>Deleting</td>
           <td>O(1)(pop)</td>
         </tr>
       </tbody>
@@ -936,7 +1046,7 @@ As stack is LIFO we cannot insert and delete random element.
 
 ---
 
-# Queue Operations
+# Queue Complexity
 
 <div style="width: 50%">
   <table class="ops">
@@ -944,26 +1054,26 @@ As stack is LIFO we cannot insert and delete random element.
       <tr>
         <th id="">Operation</th>
         <th id="">Queue</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Accessing</th>
-          <td>O(n)</td>
-        </tr>
-        <tr class="even">
-          <th>Searching</th>
-          <td>O(n)</td>
-        </tr>
-        <tr class="odd">
-          <th>Inserting</th>
-          <td>O(1)(enqueue)</td>
-        </tr>
-        <tr class="even">
-          <th>Deleting</th>
-          <td>O(1)(dequeue)</td>
-        </tr>
-      </tbody>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <th>Accessing</th>
+        <td>O(n)</td>
+      </tr>
+      <tr class="even">
+        <th>Searching</th>
+        <td>O(n)</td>
+      </tr>
+      <tr class="odd">
+        <th>Inserting</th>
+        <td>O(1)(enqueue)</td>
+      </tr>
+      <tr class="even">
+        <th>Deleting</th>
+        <td>O(1)(dequeue)</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -1526,38 +1636,38 @@ layout: center
         <th id=""></th>
       </tr>
     </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Concept</th>
-          <td>
-            <ul>
-              <li>consecutive memory space: arr[i].address = base_address + i * data_type_size</li>
-              <li>same data type → same size for each element </li>
-              <li>fixed length </li>  
-            </ul>
-          </td>
-        </tr>
-        <tr class="even">
-          <th>Operations</th>
-          <td><span class="hl-strong">Accessing O(1)</span>, Searching O(n)</td>
-        </tr>
-        <tr class="odd">
-          <th>Notes</th>
-          <td>
-            <ul>
-              <li>not memory friendly</li>
-              <li>cpu cacheable </li>
-              <li>index from 0</li>
-              <li>fundamental data structure to implement others such as stack, queue, heap</li>
-              <li>data type (programming language) vs. data structure </li>
-            </ul>
-          </td>
-        </tr>
-        <tr class="even">
-          <th>Hands-on</th>
-          <td>dynamic array, stack/queue, binary search, etc. </td>
-        </tr>
-      </tbody>
+    <tbody>
+      <tr class="odd">
+        <th>Concept</th>
+        <td>
+          <ul>
+            <li>consecutive memory space: arr[i].address = base_address + i * data_type_size</li>
+            <li>same data type → same size for each element </li>
+            <li>fixed length </li>  
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <th>Complexity</th>
+        <td><span class="hl-strong">Accessing O(1)</span>, Searching O(n)</td>
+      </tr>
+      <tr class="odd">
+        <th>Notes</th>
+        <td>
+          <ul>
+            <li>not memory friendly</li>
+            <li>cpu cacheable </li>
+            <li>index from 0</li>
+            <li>fundamental data structure to implement others such as stack, queue, heap</li>
+            <li>data type (programming language) vs. data structure </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <th>Hands-on</th>
+        <td>dynamic array, stack/queue, binary search, etc. </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -1573,24 +1683,24 @@ layout: center
         <th id=""></th>
       </tr>
     </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Concept</th>
-          <td><span class="hl-strong">LIFO/FILO</span></td>
-        </tr>
-        <tr class="even">
-          <th>Operations</th>
-          <td>Accessing O(n), Searching O(n), Inserting/push O(1), Deleting/pop O(1)</td>
-        </tr>
-        <tr class="odd">
-          <th>Notes</th>
-          <td>Stack implementation by dynamic array or linked list</td>
-        </tr>
-        <tr class="even">
-          <th>Hands-on</th>
-          <td>function call stack, expression matching, etc. </td>
-        </tr>
-      </tbody>
+    <tbody>
+      <tr class="odd">
+        <th>Concept</th>
+        <td><span class="hl-strong">LIFO/FILO</span></td>
+      </tr>
+      <tr class="even">
+        <th>Complexity</th>
+        <td>Accessing O(n), Searching O(n), Inserting/push O(1), Deleting/pop O(1)</td>
+      </tr>
+      <tr class="odd">
+        <th>Notes</th>
+        <td>Stack implementation by dynamic array or linked list</td>
+      </tr>
+      <tr class="even">
+        <th>Hands-on</th>
+        <td>function call stack, expression matching, etc. </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -1606,24 +1716,24 @@ layout: center
         <th id=""></th>
       </tr>
     </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Concept</th>
-          <td><span class="hl-strong">FIFO/LILO</span></td>
-        </tr>
-        <tr class="even">
-          <th>Operations</th>
-          <td>Accessing O(n), Searching O(n), Inserting/enqueue O(1), Deleting/dequeue O(1)</td>
-        </tr>
-        <tr class="odd">
-          <th>Notes</th>
-          <td>Queue implementation by dynamic array or linked list</td>
-        </tr>
-        <tr class="even">
-          <th>Hands-on</th>
-          <td>priority queue, circular queue, job queue, resource pool, etc. </td>
-        </tr>
-      </tbody>
+    <tbody>
+      <tr class="odd">
+        <th>Concept</th>
+        <td><span class="hl-strong">FIFO/LILO</span></td>
+      </tr>
+      <tr class="even">
+        <th>Complexity</th>
+        <td>Accessing O(n), Searching O(n), Inserting/enqueue O(1), Deleting/dequeue O(1)</td>
+      </tr>
+      <tr class="odd">
+        <th>Notes</th>
+        <td>Queue implementation by dynamic array or linked list</td>
+      </tr>
+      <tr class="even">
+        <th>Hands-on</th>
+        <td>priority queue, circular queue, job queue, resource pool, etc. </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -1639,36 +1749,36 @@ layout: center
         <th id=""></th>
       </tr>
     </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Concept</th>
-          <td>
-            <ul>
-              <li>nonconsecutive memory space</li>
-              <li>node: data + pointer</li>
-              <li>Single Linked List, Doubly Linked List, Circular Linked List, Positional Linked List </li>  
-            </ul>
-          </td>
-        </tr>
-        <tr class="even">
-          <th>Operations</th>
-          <td>Accessing O(n), Searching O(n), <span class="hl-strong">Inserting O(1)</span>, <span class="hl-strong">Deleting O(1)</span></td>
-        </tr>
-        <tr class="odd">
-          <th>Notes</th>
-          <td>
-            <ul>
-              <li>accessing slower than array</li>
-              <li>with/without head/tail node (which don’t store any data)   </li>
-              <li>fundamental data structure to implement others such as skip list, hash table, etc.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr class="even">
-          <th>Hands-on</th>
-          <td>stack, queue, traverse/reverse/update/merge, etc. </td>
-        </tr>
-      </tbody>
+    <tbody>
+      <tr class="odd">
+        <th>Concept</th>
+        <td>
+          <ul>
+            <li>nonconsecutive memory space</li>
+            <li>node: data + pointer</li>
+            <li>Single Linked List, Doubly Linked List, Circular Linked List, Positional Linked List </li>  
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <th>Complexity</th>
+        <td>Accessing O(n), Searching O(n), <span class="hl-strong">Inserting O(1)</span>, <span class="hl-strong">Deleting O(1)</span></td>
+      </tr>
+      <tr class="odd">
+        <th>Notes</th>
+        <td>
+          <ul>
+            <li>accessing slower than array</li>
+            <li>with/without head/tail node (which don’t store any data)   </li>
+            <li>fundamental data structure to implement others such as skip list, hash table, etc.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <th>Hands-on</th>
+        <td>stack, queue, traverse/reverse/update/merge, etc. </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -1684,37 +1794,37 @@ layout: center
         <th id=""></th>
       </tr>
     </thead>
-      <tbody>
-        <tr class="odd">
-          <th>Concept</th>
-          <td>
-            <ul>
-              <li>one root</li>
-              <li>max 2 child nodes</li>
-              <li>height & depth</li>
-              <li>4 traversal (DFS/BFS): in-order(left-root-right), pre-order(root-left-right), post-order(left-right-root), level-order</li> 
-              <li>proper, perfect, full, complete binary tree</li> 
-            </ul>
-          </td>
-        </tr>
-        <tr class="even">
-          <th>Operations</th>
-          <td>
-            <ul>
-              <li>DFS: time O(n), space O(h) </li>
-              <li>BFS: time O(n), space O(n)</li>
-            </ul>
-          </td>
-        </tr>
-        <tr class="odd">
-          <th>Notes</th>
-          <td>stored in array or linked nodes</td>
-        </tr>
-        <tr class="even">
-          <th>Hands-on</th>
-          <td>4 traversal</td>
-        </tr>
-      </tbody>
+    <tbody>
+      <tr class="odd">
+        <th>Concept</th>
+        <td>
+          <ul>
+            <li>one root</li>
+            <li>max 2 child nodes</li>
+            <li>height & depth</li>
+            <li>4 traversal (DFS/BFS): in-order(left-root-right), pre-order(root-left-right), post-order(left-right-root), level-order</li> 
+            <li>proper, perfect, full, complete binary tree</li> 
+          </ul>
+        </td>
+      </tr>
+      <tr class="even">
+        <th>Complexity</th>
+        <td>
+          <ul>
+            <li>DFS: time O(n), space O(h) </li>
+            <li>BFS: time O(n), space O(n)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="odd">
+        <th>Notes</th>
+        <td>stored in array or linked nodes</td>
+      </tr>
+      <tr class="even">
+        <th>Hands-on</th>
+        <td>4 traversal</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
