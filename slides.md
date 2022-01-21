@@ -39,16 +39,17 @@ Data Structures and Algorithms I
 
 <div grid="~ cols-2 gap-4">
 <div>
-6 weeks (Jan ~ Mar), 6 seminars, 6 labs:
+6 weeks (Jan ~ Mar)/6 seminars/6 labs:
 
 <p class="norm">
-1. Python, Complexity & Big O<br/>
-2. Array, Stack, Queue, Recursion<br/>
-3. Linked List, Lineary Search, Binary Search<br/> 
-4. Tree<br/> 
-5. Algorithm Design & Pattern<br/> 
-6. Review
+1. Jan 24: Python, Complexity & Big O<br/>
+2. Feb 07: Array, Stack, Queue, Recursion<br/>
+3. Feb 14: Linked List, Lineary Search, Binary Search<br/> 
+4. Feb 21: Tree<br/> 
+5. Feb 28: Algorithm Design & Pattern<br/> 
+6. Mar 07: Review
 </p>
+<p>Mar 07: Resit Online Session</p>
 </div>
 <div>
 3 assignments & open book exam:
@@ -724,7 +725,7 @@ Memory is a limited resource in programing and memory allocation is quite compli
     
   </div>  
   <div align="center">
-    <img src="/images/dynamic_array.png" style="width: 80%"/>
+    <img src="/images/dynamic_array.png" style="width: 90%"/>
   </div> 
 </div>
 
@@ -739,7 +740,7 @@ Growth Pattern:
 <br/>
 
 <p class="norm">
-👉 memory management is one of the biggest challenges to programmers. 
+👉 memory management is one of the biggest programming challenges. 
 </p>
 
 <!--
@@ -761,7 +762,7 @@ new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);
 
 ---
 
-# Array
+# Array Complexity
 
 <div style="width: 70%">
   <table class="ops">
@@ -781,7 +782,7 @@ new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);
       <tr class="even">
         <th>Searching</th>
         <td>O(n)</td>
-        <td>O(1)</td>
+        <td>O(n)</td>
       </tr>
       <tr class="odd">
         <th>Inserting</th>
