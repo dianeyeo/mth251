@@ -720,7 +720,7 @@ Memory is a limited resource in programing and memory allocation is quite compli
 
 <div grid="~ cols-2 gap-4">
   <div>
-    <p class="norm">- what is the good space size for an array?</p>
+    <p class="norm">- what is the good space/slot size for an array?</p>
     <p class="norm">- when is the good time to expand/shrink the array? </p>
     
   </div>  
