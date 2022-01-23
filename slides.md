@@ -1357,7 +1357,7 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 # Linear Search
 
-<br/>
+<logos-jupyter />
 
 -   Input: array, target element
 -   Output: position (-1 if not existing)
@@ -1366,7 +1366,7 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 # Binary Search
 
-<br/>
+<logos-jupyter />
 
 -   Input: array, target element
 -   Output: position (-1 if not existing)
@@ -1377,12 +1377,12 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 <br/>
 
-<div grid="~ cols-2 gap-8">
+<div grid="~ cols-2 gap-4">
   <div align="center">
-    <img src="/images/tree_example1.png" style="width: 80%"/>
+    <img src="/images/tree_example1.png" style="width: 70%"/>
   </div>  
   <div align="center">
-    <img src="/images/tree_example2.png" style="width: 80%"/>
+    <img src="/images/tree_example2.png" style="width: 70%"/>
   </div> 
 </div>
 
@@ -1404,7 +1404,7 @@ Hopefully after the class, recursion is no more magic to you and you can underst
     </ul>
   </div>  
   <div align="left">
-    <img src="/images/tree_terminology1.png" style="width: 80%"/>
+    <img src="/images/tree_terminology1.png" style="width: 70%"/>
   </div> 
 </div>
 
@@ -1433,7 +1433,7 @@ Path: sequence of nodes and edges from one node to the other, A -> B -> D -> E
     </ul>
   </div>  
   <div align="left">
-    <img src="/images/tree_terminology2.png" style="width: 80%"/>
+    <img src="/images/tree_terminology2.png" style="width: 70%"/>
   </div> 
 </div>
 
@@ -1465,7 +1465,7 @@ Height: edges in longest path from the node to the leaf
 
 <br/>
 
-<div grid="~ cols-2 gap-8">
+<div grid="~ cols-2 gap-4">
   <div>
     <ul>
       <li>Array</li> 
@@ -1491,17 +1491,21 @@ Height: edges in longest path from the node to the leaf
 
 # Binary Tree Traverse (DFS): pre-order
 
+<logos-jupyter />
+
 <br/>
 <br/>
 
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
-    ROOT → Left → Right:  
-    <ol>
-      <li>Visit the root</li> 
-      <li>Traverse the left subtree</li> 
-      <li>Traverse the right subtree</li> 
-    </ol>
+  <p>
+      ROOT → Left → Right:  
+      <ol>
+        <li>Visit the root</li> 
+        <li>Traverse the left subtree</li> 
+        <li>Traverse the right subtree</li> 
+      </ol>
+    </p> 
     <p class="hl-color">A B D H I E J C F G K</p>
   </div>  
   <div align="center">
@@ -1516,17 +1520,21 @@ Height: edges in longest path from the node to the leaf
 
 # Binary Tree Traverse (DFS): in-order
 
+<logos-jupyter />
+
 <br/>
 <br/>
 
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
-    Left → Root → Right:  
-    <ol>
-      <li>Traverse the left subtree</li> 
-      <li>Visit the root</li>   
-      <li>Traverse the right subtree</li> 
-    </ol>
+    <p>
+      Left → Root → Right:  
+      <ol>
+        <li>Traverse the left subtree</li> 
+        <li>Visit the root</li>   
+        <li>Traverse the right subtree</li> 
+      </ol>
+    </p>
     <p class="hl-color">H D I B J E A F C K G</p>
   </div>  
   <div align="center">
@@ -1541,17 +1549,21 @@ Height: edges in longest path from the node to the leaf
 
 # Binary Tree Traverse (DFS): post-order
 
+<logos-jupyter />
+
 <br/>
 <br/>
 
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
-    Left → Right → Root:  
-    <ol>
-      <li>Traverse the left subtree</li> 
-      <li>Traverse the right subtree</li> 
-      <li>Visit the root</li>   
-    </ol>
+    <p>
+      Left → Right → Root:  
+      <ol>
+        <li>Traverse the left subtree</li> 
+        <li>Traverse the right subtree</li> 
+        <li>Visit the root</li>   
+      </ol>
+    </p>
     <p class="hl-color">H I D J E B F K G C A</p>
   </div>  
   <div align="center">
@@ -1566,17 +1578,21 @@ Height: edges in longest path from the node to the leaf
 
 # Binary Tree Traverse (BFS): level order
 
+<logos-jupyter />
+
 <br/>
 <br/>
 
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
-    <ol>
-      <li>Visit the root</li>  
-      <li>Visit the left node</li> 
-      <li>Visit the right node</li> 
-      <li>Go to next level</li> 
-    </ol>
+    <p>
+      <ol>
+        <li>Visit the root</li>  
+        <li>Visit the left node</li> 
+        <li>Visit the right node</li> 
+        <li>Go to next level</li> 
+      </ol>
+    </p>
     <p class="hl-color">A B C D E F G H I J K</p>
   </div>  
   <div align="center">
@@ -1604,7 +1620,7 @@ Height: edges in longest path from the node to the leaf
     </ul>
   </div>  
   <div align="left">
-    <img src="/images/binary_tree.png" style="width: 90%"/>
+    <img src="/images/binary_tree.png" style="width: 80%"/>
   </div> 
 </div>
 
@@ -1977,6 +1993,8 @@ layout: center
 > <i class="fas fa-external-link-alt"></i> [https://colab.research.google.com/](https://colab.research.google.com/)
 
 notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
+
+colab: [https://colab.research.google.com/github/fastzhong/mth251/blob/main/notebooks/lab1.ipynb](https://colab.research.google.com/github/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
 
 ---
 
