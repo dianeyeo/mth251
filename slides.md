@@ -1,7 +1,7 @@
 ---
 theme: seriph
 title: "MTH251"
-background: https://mth251.fastzhong.com/images/cover.webp
+background: https://mth251.fastzhong/images/cover.webp
 highlighter: shiki
 lineNumbers: true
 colorSchema: "light"
@@ -76,9 +76,9 @@ Data Structures and Algorithms I
 
 slides online: [https://mth251.fastzhong.com/](https://mth251.fastzhong.com/)
 
-pdf: [<logos-github-octocat /> https://github.com/fastzhong/mth251/blob/main/mth251.pdf](https://github.com/fastzhong/mth251/blob/main/mth251.pdf)
+<mdi-file-pdf /> [https://mth251.fastzhong.com/mth251.pdf](https://mth251.fastzhong.com/mth251.pdf)
 
-labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
+<logos-github-octocat /> labs:  [https://github.com/fastzhong/mth251/tree/main/public/notebooks](https://github.com/fastzhong/mth251/tree/main/public/notebooks)
 
 ---
 
@@ -99,7 +99,7 @@ labs: [<logos-github-octocat /> https://github.com/fastzhong/mth251/tree/main/no
 
 # Learning Resource
 
-[<mdi-file-code /> Leetcode](https://leetcode.com/)
+<mdi-file-code /> [Leetcode](https://leetcode.com/)
 
 <img src="/images/leetcode.png" style="border-radius: 8px; width: 70%"/>
 
@@ -1875,7 +1875,7 @@ layout: center
 -   download and install Anaconda
 -   create and Activate your Anaconda Python env
 -   (Optional) install and setup VS Code
--   familiar yourself with Python and do exercise 📝 [lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
+-   familiar yourself with Python and do exercise 📝 [lab1.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab1.ipynb)
 
 ---
 
@@ -1994,7 +1994,7 @@ layout: center
 
 notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
 
-colab: [https://colab.research.google.com/github/fastzhong/mth251/blob/main/notebooks/lab1.ipynb](https://colab.research.google.com/github/fastzhong/mth251/blob/main/notebooks/lab1.ipynb)
+colab: [https://colab.research.google.com/github/fastzhong/mth251/blob/main/public/notebooks/lab1.ipynb](https://colab.research.google.com/github/fastzhong/mth251/blob/main/public/notebooks/lab1.ipynb)
 
 ---
 
@@ -2022,7 +2022,7 @@ colab: [https://colab.research.google.com/github/fastzhong/mth251/blob/main/note
 <mdi-clipboard-list-outline />
 
 -   review Array, Stack, Queue, Recursion
--   exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab2.ipynb)
+-   exercise 📝 [lab2.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab2.ipynb)
 -   priority queue
 -   circular queue
 
@@ -2179,7 +2179,7 @@ Implementation of CircularQueue class:
     6. PEP8
 -   review Singly Linked List, Doubly Linked List
 -   review linear search, binary search
--   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab3.ipynb)
+-   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab3.ipynb)
 
 ---
 
@@ -2239,7 +2239,7 @@ p {
 <mdi-clipboard-list-outline />
 
 -   review Binary Tree and 4 traverse methods
--   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab4.ipynb)
+-   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab4.ipynb)
 
 ---
 
@@ -2311,7 +2311,7 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <mdi-clipboard-list-outline />
 
--   let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab5.ipynb)
+-   let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab5.ipynb)
 
 ---
 
@@ -2349,4 +2349,4 @@ p {
 
 <mdi-clipboard-list-outline />
 
--   📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/notebooks/lab6.ipynb)
+-   📝 [lab6.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab6.ipynb)
