@@ -1,7 +1,7 @@
 ---
 theme: seriph
 title: "MTH251"
-background: https://raw.githubusercontent.com/fastzhong/mth251/main/images/cover.webp
+background: https://mth251.fastzhong.com/images/cover.webp
 highlighter: shiki
 lineNumbers: true
 colorSchema: "light"
