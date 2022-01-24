@@ -84,7 +84,7 @@ slides online: [https://mth251.fastzhong.com/](https://mth251.fastzhong.com/)
 
 # Learning Resource
 
-[📚 books](https://github.com/fastzhong/mth251/tree/main/resources)
+[📚 books](https://github.com/fastzhong/mth251/tree/main/public/resources)
 
 <div grid="~ cols-4 gap-4">
   <div><img src="/images/study_guide.png" style="width: 140px; height: 180px"/></div>
@@ -1944,6 +1944,7 @@ layout: center
   <div class="norm">
     <ul>
       <li>copy & paste the Jupyter link in the prompt to your browser</li>
+      <li>save notebooks to your local</li>
       <li>Control-C to stop Jupyter from the command line</li>  
     </ul>
   </div>  
@@ -1992,7 +1993,7 @@ layout: center
 > Google provides online Jupyter env:  
 > <i class="fas fa-external-link-alt"></i> [https://colab.research.google.com/](https://colab.research.google.com/)
 
-notebooks: [https://github.com/fastzhong/mth251/tree/main/notebooks](https://github.com/fastzhong/mth251/tree/main/notebooks)
+notebooks: [https://github.com/fastzhong/mth251/tree/main/public/notebooks](https://github.com/fastzhong/mth251/tree/main/public/notebooks)
 
 colab: [https://colab.research.google.com/github/fastzhong/mth251/blob/main/public/notebooks/lab1.ipynb](https://colab.research.google.com/github/fastzhong/mth251/blob/main/public/notebooks/lab1.ipynb)
 
