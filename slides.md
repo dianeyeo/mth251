@@ -993,11 +993,11 @@ Push & Pop are the 2 most important operations for stack. Push is to store an el
         </tr>
         <tr class="odd">
           <td>Inserting</td>
-          <td>O(1)(push)</td>
+          <td>O(1)&nbsp;&nbsp;(push)</td>
         </tr>
         <tr class="even">
           <td>Deleting</td>
-          <td>O(1)(pop)</td>
+          <td>O(1)&nbsp;&nbsp;(pop)</td>
         </tr>
       </tbody>
   </table>
@@ -1068,11 +1068,11 @@ As stack is LIFO we cannot insert and delete random element.
       </tr>
       <tr class="odd">
         <th>Inserting</th>
-        <td>O(1)(enqueue)</td>
+        <td>O(1)&nbsp;&nbsp;(enqueue)</td>
       </tr>
       <tr class="even">
         <th>Deleting</th>
-        <td>O(1)(dequeue)</td>
+        <td>O(1)&nbsp;&nbsp;(dequeue)</td>
       </tr>
     </tbody>
   </table>
