@@ -574,7 +574,6 @@ $O(4n^2 + 8n + 16) = O(n^2)$
 Big-O indicating the complexity level not the exact number of operations or the exact size of space
 
 How to Determine Complexities
-
 -->
 
 ---
@@ -706,7 +705,6 @@ By definition array should contain a numbers of element with same data type. Str
 Why the starting index is 0?
 
 Memory is a limited resource in programing and memory allocation is quite complicated because we dont do memory allocation randomly and manually. A background process - Garbage collector (GC) will reclaim memory from programs smartly without our intervention.
-
 -->
 
 ---
@@ -733,7 +731,7 @@ Memory is a limited resource in programing and memory allocation is quite compli
 
 Growth Pattern:
 
--   Python $0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...$
+-   Python $new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);$ (0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...)
 -   Java $((size * 3) / 2) + 1$
 -   C# $size * 2$
 
@@ -753,10 +751,6 @@ Memory is still a limited resource, the actual implementation of dynamic array h
 This over-allocates proportional to the list size, making room for additional growth. The over-allocation is mild but is enough to give linear-time amortized behavior over a long sequence of appends() in the presence of a poorly-performing system realloc().
 
 Note: new_allocated won't overflow because the largest possible value is PY_SSIZE_T_MAX * (9 / 8) + 6 which always fits in a size_t.
-
-Objects/listobject.c:
-new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);
-
 
 -->
 
@@ -1009,7 +1003,6 @@ To access the bottom element of the stack, we have to remove all the elements ab
 Search is similar to accessing.
 
 As stack is LIFO we cannot insert and delete random element.
-
 -->
 
 ---
@@ -1095,7 +1088,7 @@ As stack is LIFO we cannot insert and delete random element.
 
 <div grid="~ cols-2 gap-10">
   <div><img src="/images/ll_singly.png" style="width: 60%"/></div>
-  <div>code here</div>
+  <div></div>
 </div>
 
 <!--
@@ -1259,7 +1252,6 @@ Every single recursion function must have at least 1 base case and 1 recursive c
 To understand complicated concept like Recursion, its always good to start with example.
 
 Big(O) of Fibonacci - iterative vs. recursive
-
 -->
 
 ---
