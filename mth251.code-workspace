@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../SUSS-MTH25x-resources/GJenkinns/cs22-slides-and-py-files"
 		}
 	],
 	"settings": {

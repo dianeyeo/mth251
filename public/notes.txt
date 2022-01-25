@@ -139,3 +139,47 @@ For Circular Linked List, the last element points back to the first element, ins
 For Double Linked List, we have two pointers, one points to the previous node, the other points to the next.
 
 To speed up the accessing, we can create the position class, each node is associated with a position object. We don’t use indexing as position as indexing can be changed as we remove/add the nodes. The actual position logic is up to the implementation.
+
+# Linked List vs. Array
+
+Both array and linked list are very foundation data structure, because they represent how we store data into memory.  For array we require consecutive memory units, imaging after certain time, the memory becomes fragment. If we want to store a big chunk of data, for example the data needs 100 memory units, we may not able to find 100 unites together, but linked list can solve that problem as the node is stored randomly in the memory.
+
+Linked list is more flexible than Array but why Array is still important and useful.
+
+Let us look at this picture, data in our computer can be stored in different place, especially on runtime, data is accessible not just in memory but also in cpu cache. Giving one example, if we have one integer array which contains 4 integer 1,2,3,4, if 1 is being processed by cpu, it will be loaded into cpu cache. As 2, 3, 4 are close to 1, and very likely to be processed next, So modern cpu is so smart that it will preload 2,3,4 into cpu cache together with 1. This optimization operation is available for array data structure but not linked list.
+
+# Recursion
+
+Recursion pattern: recursion includes 2 cases the base and the recursive case
+
+Base case: the exist condition
+Recursive case: reduce the original problem to a smaller version
+
+Every single recursion function must have at least 1 base case and 1 recursive case.
+
+To understand complicated concept like Recursion, its always good to start with example.
+
+Big(O) of Fibonacci - iterative vs. recursive
+
+
+Recursion is applied widely in many algorithms, so it is very important to master this technique.
+
+Hopefully after the class, recursion is no more magic to you and you can understand how to resolve problem with recursion.
+
+# Tree Terminology
+
+Tree is collection of data in hierarchical structure. Each element in the tree is called node but unlike Linked list, tree node can have multiple links to the others, the link is called edge.
+
+We have different nodes in a tree, first node is root, no parent, only one root in a tree.
+
+The degree of a node is the total numbers of links or total numbers of child nodes.
+
+SubTree: child node forms a tree recursively.
+
+Path: sequence of nodes and edges from one node to the other, A -> B -> D -> E
+
+Level: edges in path from root to the node
+
+Depth: edges in path from the node to the root
+
+Height: edges in longest path from the node to the leaf

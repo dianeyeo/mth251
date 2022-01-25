@@ -905,14 +905,19 @@ for many_times:
 
 <br/>
 
-An <span class="hl-bg">abstract data type</span> (ADT) is an abstraction of a <span class="hl-bg">data structure</span> which provides only the interface to which a data structure must adhere to. The interface does not give any specific details about how something should be implemented.
+An <span class="hl-bg">abstract data type</span> (ADT) is an abstraction of a <span class="hl-bg">data structure</span> which provides only the interface to which a data structure must adhere to. The interface does not give any specific details about how something should be implemented - <span class="uline">ADT provides implementation-independent view of a data structure</span>. 
 
-Programming language provides different <span class="hl-bg">data types</span> to implement/represent different data structure.
+Programming language provides different <span class="hl-bg">data types</span> to implement/represent a specific data structure.
 
-i.e. Array
 
--   a linear abstract data type
--   a java data type
+-   <span class="norm">Array - a linear abstract data type</span> 
+-   <span class="norm">Array - a java data type</span>
+
+
+-   <span class="norm">Dynamic Array - array with changable size</span> 
+-   <span class="norm">List - a python data type, more flexible than a dynamic array</span>
+-   <span class="norm">ArrayList/Vector - java data type, implementation of List</span>
+
 
 <!--
 When studying algorithm, we use data structure such as Array, Dynamic Array, Linked List, as the solution or algorithm is programming language independent.
@@ -1217,7 +1222,16 @@ Let us look at this picture, data in our computer can be stored in different pla
 
 # Recursion
 
-Recursion by definition is a function that calls itself.
+<br/>
+
+Recursion is the process of defining a problem (or the solution to a problem) in terms of (a simpler version of) itself
+
+
+👉 Recursion by definition is a function that calls itself.
+
+---
+
+# Recursion
 
 -   base case
 -   recursive case
