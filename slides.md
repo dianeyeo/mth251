@@ -1115,15 +1115,16 @@ In Linked List, each a single node in the linked list has two parts, one is to s
 <pre class="norm">
 - add(item)
 - append(item)
-- remove(item)
-- isEmpty()
-- length() 
-- pop() 
-- pop(position)
-- search(item)
-- index(item) 
+- insert(position, item)
+- delete(item)
+- is_empty()
+- size() 
 - set(position, item)
 - get(position)
+- search(item)
+- index(item) 
+- pop() 
+- pop(position)
 </pre>
 
 ---
@@ -2197,7 +2198,7 @@ Implementation of CircularQueue class:
 -   Python (lab1)  
     5. misc.  
     6. PEP8
--   review Singly Linked List, Doubly Linked List
+-   review Linked List, Doubly Linked List
 -   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab3.ipynb)
 
 ---
