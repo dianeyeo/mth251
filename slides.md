@@ -44,10 +44,10 @@ Data Structures and Algorithms I
 <p class="norm">
 1. Jan 24: Python, Complexity & Big O<br/>
 2. Feb 07: Array, Stack, Queue, Recursion<br/>
-3. Feb 14: Linked List, Lineary Search, Binary Search<br/> 
+3. Feb 14: Linked List<br/> 
 4. Feb 21: Tree<br/> 
-5. Feb 28: Algorithm Design & Pattern<br/> 
-6. Mar 07: Review
+5. Feb 28: Lineary Search, Binary Search, Algorithm Design & Pattern<br/> 
+6. Mar 07: Review, Q&A
 </p>
 <p>Mar 07: Resit Online Session</p>
 </div>
@@ -1087,9 +1087,11 @@ As stack is LIFO we cannot insert and delete random element.
 
 -   dynamic linear data structure
 
+-   each item contains data & pointer 
+
 -   data stored in a “Node” class
 
--   data & pointer
+-   each item holds a relative position relative to the other items: 1st, 2nd, ..., last item  
 
 <div grid="~ cols-2 gap-10">
   <div><img src="/images/ll_singly.png" style="width: 60%"/></div>
@@ -1106,7 +1108,27 @@ In Linked List, each a single node in the linked list has two parts, one is to s
 
 ---
 
-# Linked List Operations
+# List: Operations (potential)
+
+<br/>
+
+<pre class="norm">
+- add(item)
+- append(item)
+- remove(item)
+- isEmpty()
+- length() 
+- pop() 
+- pop(position)
+- search(item)
+- index(item) 
+- set(position, item)
+- get(position)
+</pre>
+
+---
+
+# Linked List Complexity
 
 <div style="width: 70%">
   <table class="ops">
@@ -1130,12 +1152,12 @@ In Linked List, each a single node in the linked list has two parts, one is to s
         </tr>
         <tr class="odd">
           <th>Inserting</th>
-          <td>O(1)</td>
+          <td>O(1) 🤔</td>
           <td>O(n)</td>
         </tr>
         <tr class="even">
           <th>Deleting</th>
-          <td>O(1)</td>
+          <td>O(1) 🤔</td>
           <td>O(n)</td>
         </tr>
       </tbody>
@@ -1157,7 +1179,7 @@ Comparing Array, the accessing is slower but the update is much faster.
 <br/>
 
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
-  <div align="right">Singly Linked List</div>
+  <div align="right">Linked List</div>
   <div><img src="/images/ll_singly.png" style="width: 50%"/></div>
   <div align="right">Doubly Linked List</div>
   <div><img src="/images/ll_doubly.png" style="width: 50%"/></div>
@@ -1361,23 +1383,6 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 ---
 
-# Linear Search
-
-<logos-jupyter />
-
--   Input: array, target element
--   Output: position (-1 if not existing)
-
----
-
-# Binary Search
-
-<logos-jupyter />
-
--   Input: array, target element
--   Output: position (-1 if not existing)
-
----
 
 # Tree
 
@@ -1851,6 +1856,14 @@ layout: center
   </table>
 </div>
 
+--- 
+
+# Algorithm Design & Pattens
+## Linear Search & Binary Search
+
+-   Input: array, target element
+-   Output: position (-1 if not existing)
+
 ---
 
 <div id="labs">
@@ -2185,29 +2198,7 @@ Implementation of CircularQueue class:
     5. misc.  
     6. PEP8
 -   review Singly Linked List, Doubly Linked List
--   review linear search, binary search
 -   exercise 📝 [lab3.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab3.ipynb)
-
----
-
-# Lab 3
-
-### lineary search & binary search
-
-<br/>
-
-<span class="norm">
-
-1. Go to [https://www.cs.usfca.edu/~galles/visualization/Search.html]([https://www.cs.usfca.edu/~galles/visualization/Search.html]) to understand how Linear Search & Binary Search is working
-
-2. Implement Linear Search & Binary Search in Python by yourself:
-
--   familiar with Python coding style
--   understand the input, output, steps and ending condition
--   learn and compare different approaches (time & space complexity)
--   test code reliability with different cases
-
-</span>
 
 ---
 
@@ -2221,21 +2212,6 @@ Implementation of CircularQueue class:
     -   recursive implementation
     -   iterative implementation
 
----
-
-# Lab 3
-
-#### Exercise: palindrome
-
-Implement a Python function to determines if a string is a palindrome, for example, ‘racecar’ and ‘level’ are palindromes
-
-<style>
-p {
-    font-family: 'Open Sans';
-    font-size: 0.8rem;
-    line-height: 1.5em;
-}
-</style>
 
 ---
 
@@ -2318,7 +2294,46 @@ In a complete binary tree, every level, except possibly the last, is completely 
 
 <mdi-clipboard-list-outline />
 
+-   review linear search, binary search
+
 -   let us do some leetcode exercises 📝 [lab5.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab5.ipynb)
+
+---
+
+# Lab 5
+
+### lineary search & binary search
+
+<br/>
+
+<span class="norm">
+
+1. Go to [https://www.cs.usfca.edu/~galles/visualization/Search.html]([https://www.cs.usfca.edu/~galles/visualization/Search.html]) to understand how Linear Search & Binary Search is working
+
+2. Implement Linear Search & Binary Search in Python by yourself:
+
+-   familiar with Python coding style
+-   understand the input, output, steps and ending condition
+-   learn and compare different approaches (time & space complexity)
+-   test code reliability with different cases
+
+</span>
+
+---
+
+# Lab 5
+
+#### Exercise: palindrome
+
+Implement a Python function to determines if a string is a palindrome, for example, ‘racecar’ and ‘level’ are palindromes
+
+<style>
+p {
+    font-family: 'Open Sans';
+    font-size: 0.8rem;
+    line-height: 1.5em;
+}
+</style>
 
 ---
 
