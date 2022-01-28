@@ -170,16 +170,19 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 Tree is collection of data in hierarchical structure. Each element in the tree is called node but unlike Linked list, tree node can have multiple links to the others, the link is called edge.
 
-We have different nodes in a tree, first node is root, no parent, only one root in a tree.
+node may have contain additional information, this additional information is called "payload". Payload information is not central to tree algorithm, it is often critical and useful in applications
+that make use of trees.
 
-The degree of a node is the total numbers of links or total numbers of child nodes.
+edge is another fundamental part of tree, it connects two nodes. node has one incoming edge from another node and can have multiple outgoing edges.
+Height:  no. edges in longest path from the node to the leaf
+We have different nodes in a tree, first node is root, no parent, only one root in a tree. leaf nodes have no outgoing edges.
+
+The degree of a node is the total numbers of outgoing edges or total numbers of child nodes.
+
+Path: an ordered list of nodes that are connected by edges: A -> B -> D -> H
 
 SubTree: child node forms a tree recursively.
 
-Path: sequence of nodes and edges from one node to the other, A -> B -> D -> E
+Level: no. edges in path from root to the node
 
-Level: edges in path from root to the node
-
-Depth: edges in path from the node to the root
-
-Height: edges in longest path from the node to the leaf
+Depth: no. edges in path from the node to the root

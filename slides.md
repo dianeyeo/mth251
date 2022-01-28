@@ -1389,9 +1389,9 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 
 <br/>
 
-<div grid="~ cols-2 gap-4">
+<div grid="~ cols-2 gap-1">
   <div align="center">
-    <img src="/images/tree_example1.png" style="width: 70%"/>
+    <img src="/images/tree_example1.png" style="width: 80%"/>
   </div>  
   <div align="center">
     <img src="/images/tree_example2.png" style="width: 70%"/>
@@ -1399,23 +1399,62 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 </div>
 
 ---
+layout: two-cols
+---
+
+# Tree
+
+<br/>
+
+```html
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title>simple</title>
+</head>
+<body>
+<h1>A simple web page</h1>
+<ul>
+    <li>List item one</li>
+    <li>List item two</li>
+</ul>
+<h2><a href="http://www.suss.edu.sg">SUSS</a><h2>
+</body>
+</html>
+```
+
+::right::
+
+<br/>
+
+<p align="center" class="hl">HTML DOM tree</p>
+
+![html](/images/html.png)
+
+
+---
 
 # Tree Terminology
 
 <br/>
 
-<div class="inline-grid grid-cols-[1fr,3fr] gap-8">
+<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div align="left" class="norm">
     <ul>
-      <li>Node: Root, leaf, Internal Node</li>
-      <li>Paren, Children, Sibling</li> 
-      <li>Edge, Degree</li>
+      <li>Node: Root, Leaf, Internal Node</li>
+      <li>Node: Parent, Children, Sibling</li> 
+      <li>Edge</li>
+      <li>Degree: no. of outgoing edges or Children</li>
       <li>SubTree</li>
-      <li>Path </li>
-      <li>Level</li>     
+      <li>Path: A → B → D → H</li>
+      <li>Level: no. edges in path from root to the node</li>   
+      <li>Depth: no. edges in path from the node to the root</li>   
+      <li>Height:  no. edges in longest path from the node to the leaf</li>     
     </ul>
   </div>  
-  <div align="left">
+  <div align="center">
     <img src="/images/tree_terminology1.png" style="width: 70%"/>
   </div> 
 </div>
@@ -1423,13 +1462,22 @@ Hopefully after the class, recursion is no more magic to you and you can underst
 <!--
 Tree is collection of data in hierarchical structure. Each element in the tree is called node but unlike Linked list, tree node can have multiple links to the others, the link is called edge.
 
-We have different nodes in a tree, first node is root, no parent, only one root in a tree.
+node may have contain additional information, this additional information is called "payload". Payload information is not central to tree algorithm, it is often critical and useful in applications
+that make use of trees.
 
-The degree of a node is the total numbers of links or total numbers of child nodes.
+edge is another fundamental part of tree, it connects two nodes. node has one incoming edge from another node and can have multiple outgoing edges.
+Height:  no. edges in longest path from the node to the leaf
+We have different nodes in a tree, first node is root, no parent, only one root in a tree. leaf nodes have no outgoing edges.
+
+The degree of a node is the total numbers of outgoing edges or total numbers of child nodes.
+
+Path: an ordered list of nodes that are connected by edges: A -> B -> D -> H
 
 SubTree: child node forms a tree recursively.
 
-Path: sequence of nodes and edges from one node to the other, A -> B -> D -> E
+Level: no. edges in path from root to the node
+
+Depth: no. edges in path from the node to the root
 -->
 
 ---
@@ -1438,21 +1486,20 @@ Path: sequence of nodes and edges from one node to the other, A -> B -> D -> E
 
 <br/>
 
-<div class="inline-grid grid-cols-[1fr,3fr] gap-8">
-  <div align="left" class="norm">
-    <ul>
-      <li>Level vs. Depth vs. Height</li>   
-    </ul>
+<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
+  <div align="left" class="hl">
+      <ul>
+          <li>Level</li>
+          <li>Depth</li>
+          <li>Height</li>
+      </ul>
   </div>  
-  <div align="left">
-    <img src="/images/tree_terminology2.png" style="width: 70%"/>
+  <div align="center">
+    <img src="/images/tree_terminology2.png" style="width: 80%"/>
   </div> 
 </div>
 
 <!--
-Level: edges in path from root to the node
-Depth: edges in path from the node to the root
-Height: edges in longest path from the node to the leaf
 -->
 
 ---
@@ -1465,7 +1512,7 @@ Height: edges in longest path from the node to the leaf
 
 -   Max 2 child nodes
 
--   One and only one path from root to each node
+-   One and only one path from root to each node (path)
 
 -   Max nodes on level: $2^l$
 
@@ -1478,21 +1525,17 @@ Height: edges in longest path from the node to the leaf
 <br/>
 
 <div grid="~ cols-2 gap-4">
-  <div>
-    <ul>
-      <li>Array</li> 
-    </ul>
+  <div align="center" class="hl">
+    Array <br/>
     <img src="/images/bt_array1.png" style="width: 60%"/>
     <br/>
-    <img src="/images/bt_array2.png" style="width: 60%"/>
+    <img src="/images/tree-array.png" style="width: 60%"/>
   </div>  
-  <div>
-    <ul>
-      <li>Left/Right Linked List</li> 
-    </ul>
+  <div align="center" class="hl">
+    Left/Right Linked List <br/>
     <img src="/images/bt_ll1.png" style="width: 60%"/>
     <br/>
-    <img src="/images/bt_ll2.png" style="width: 60%"/>
+    <img src="/images/tree-list.png" style="width: 100%"/>
   </div> 
 </div>
 
@@ -1511,14 +1554,14 @@ Height: edges in longest path from the node to the leaf
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
   <p>
-      ROOT → Left → Right:  
+      <span class="hl">ROOT → Left → Right</span>  
       <ol>
         <li>Visit the root</li> 
         <li>Traverse the left subtree</li> 
         <li>Traverse the right subtree</li> 
       </ol>
     </p> 
-    <p class="hl-color">A B D H I E J C F G K</p>
+    <p class="hl">A B D H I E J C F G K</p>
   </div>  
   <div align="center">
     <img src="/images/bt_traverse.png" style="width: 60%"/>
@@ -1540,14 +1583,14 @@ Height: edges in longest path from the node to the leaf
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
     <p>
-      Left → Root → Right:  
+      <span class="hl">Left → Root → Right</span>   
       <ol>
         <li>Traverse the left subtree</li> 
         <li>Visit the root</li>   
         <li>Traverse the right subtree</li> 
       </ol>
     </p>
-    <p class="hl-color">H D I B J E A F C K G</p>
+    <p class="hl">H D I B J E A F C K G</p>
   </div>  
   <div align="center">
     <img src="/images/bt_traverse.png" style="width: 60%"/>
@@ -1569,14 +1612,14 @@ Height: edges in longest path from the node to the leaf
 <div class="inline-grid grid-cols-[1fr,2fr] gap-8">
   <div class="norm">
     <p>
-      Left → Right → Root:  
+      <span class="hl">Left → Right → Root</span>   
       <ol>
         <li>Traverse the left subtree</li> 
         <li>Traverse the right subtree</li> 
         <li>Visit the root</li>   
       </ol>
     </p>
-    <p class="hl-color">H I D J E B F K G C A</p>
+    <p class="hl">H I D J E B F K G C A</p>
   </div>  
   <div align="center">
     <img src="/images/bt_traverse.png" style="width: 60%"/>
@@ -1605,7 +1648,7 @@ Height: edges in longest path from the node to the leaf
         <li>Go to next level</li> 
       </ol>
     </p>
-    <p class="hl-color">A B C D E F G H I J K</p>
+    <p class="hl">A B C D E F G H I J K</p>
   </div>  
   <div align="center">
     <img src="/images/bt_traverse.png" style="width: 60%"/>
@@ -1624,11 +1667,11 @@ Height: edges in longest path from the node to the leaf
 <div grid="~ cols-2 gap-8">
   <div align="left" class="norm">
     <ul>
-      <li>Complete Tree: every level is completely filled except the last (leaf) and all nodes are as far left as possible</li> 
+      <li><span class="hl">Complete Tree</span>  : every level is completely filled except the last (leaf) and all nodes are as far left as possible</li> 
       <br/>
-      <li>Full Binary Tree: every node has two child nodes except leaf</li> 
+      <li><span class="hl">Full Binary Tree</span>  : every node has two child nodes except leaf</li> 
       <br/>
-      <li>Perfect Binary Tree: every node has two child nodes except leaf and all leaves on same level</li>   
+      <li><span class="hl">Perfect Binary Tree</span>  : every node has two child nodes except leaf and all leaves on same level</li>   
     </ul>
   </div>  
   <div align="left">
@@ -2225,6 +2268,7 @@ Implementation of CircularQueue class:
 -   review Binary Tree and 4 traverse methods
 -   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab4.ipynb)
 
+
 ---
 
 # Lab 4
@@ -2235,18 +2279,23 @@ Implementation of CircularQueue class:
 A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 </p>
 
-<div grid="~ cols-2 gap-8">
-  <div class="norm">
-    <p><i>For example: the maximum depth is 3</i></p>
-    <img src="/images/lab/tree_depth.png" style="width:50%"/>
-  </div>  
-  <div class="norm">
-
-</div> 
-</div>
+<p class="norm"><i>For example: the maximum depth is 3</i></p>
+<img src="/images/lab/tree_depth.png" style="width:30%"/>
 
 ---
 
+# Lab 4
+
+#### Exercise: get minimum depth of binary tree
+
+<p class="norm">
+A binary tree's minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+</p>
+
+<p class="norm"><i>For example: the minimum depth is 3</i></p>
+<img src="/images/lab/tree.png" style="width:30%"/>
+
+---
 # Lab 4
 
 #### Exercise: check a balanced binary tree
