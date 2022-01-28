@@ -1526,10 +1526,9 @@ Depth: no. edges in path from the node to the root
 
 <div grid="~ cols-2 gap-4">
   <div align="center" class="hl">
-    Array <br/>
-    <img src="/images/bt_array1.png" style="width: 60%"/>
-    <br/>
-    <img src="/images/tree-array.png" style="width: 60%"/>
+    Array <br/><br/>
+    <img src="/images/tree-array.png" style="width: 60%"/><br/>
+    <span class="norm">['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', '#', '#', '#', '#', '#', 'J']</span>
   </div>  
   <div align="center" class="hl">
     Left/Right Linked List <br/>
