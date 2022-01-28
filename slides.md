@@ -1972,7 +1972,7 @@ layout: center
   </div>
   <div>
     <p>
-        <img src="/images/lab/anaconda_env.png" style="width:60%"/><br/>
+        <img src="/images/lab/anaconda_env.png" style="width:40%"/><br/>
         <img src="/images/lab/anaconda_jupyter.png" style="width:60%"/>
     </p>
   </div>  
@@ -2012,7 +2012,7 @@ layout: center
     </ul>
   </div>  
   <div>
-    <img src="/images/lab/anaconda_cmd.png" style="height:80%"/>
+    <img src="/images/lab/anaconda_cmd.png" style="height:60%"/>
   </div> 
 </div>
 
@@ -2293,7 +2293,7 @@ A binary tree's minimum depth is the number of nodes along the shortest path fro
 </p>
 
 <p class="norm"><i>For example: the minimum depth is 3</i></p>
-<img src="/images/lab/tree.png" style="width:30%"/>
+<img src="/images/lab/bt_traverse.png" style="width:30%"/>
 
 ---
 # Lab 4
