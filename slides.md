@@ -1900,14 +1900,177 @@ layout: center
 </div>
 
 --- 
+layout: center
+---
 
 # Algorithm Design & Pattens
-## Linear Search & Binary Search
+
+
+---
+
+# Binary Search 
+
+<br/>
 
 -   Input: array, target element
 -   Output: position (-1 if not existing)
 
+<br/>
+
+<pre class="norm">
+As we know, whenever we are given a sorted Array or LinkedList or Matrix, and we are asked to find a certain element, the best algorithm we can use is the Binary Search.
+
+- Shrink the search space every iteration (recursion) 
+
+- Cannot exclude potential answers during each shrinking
+</pre>
+
+<br/>
+
+> Although the basic idea of binary search is comparatively straightforward, the details can be surprisingly tricky   
+> — Donald Knuth
+
+
 ---
+
+# Binary Search 
+
+<br/>
+
+- Contains 
+- First occurrence of a key 
+- Last occurrence of a key 
+- Least element greater than 
+- Greatest element less than  
+- Closest element 
+
+Further reading: Generalized Binary Search with predicates and main theorem:   
+[https://www.topcoder.com/community/competitive-programming/tutorials/binary-search
+](https://www.topcoder.com/community/competitive-programming/tutorials/binary-search
+)
+
+---
+
+# Two Pointers 
+
+<br/>
+
+In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the <span class="hl">Two Pointers</span> approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray.
+
+- same direction  
+<img src="/images/two-pointer-same.png" style="width: 50%"/>
+
+- reverse direction 
+<img src="/images/two-pointer-reverse.png" style="width: 50%"/>
+
+
+---
+
+### two sum 
+
+<br/>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p>Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.</p>
+  </div>  
+  <div>
+    <img src="/images/two-sum.png" style="width:80%"/>
+  </div> 
+</div>
+
+---
+
+### reverse a string
+
+<br/>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p>Write a function that reverses a string. The input string is given as an array of characters char[]. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p>
+    <p>You may assume all the characters consist of printable ascii characters.</p>
+  </div>  
+  <div>
+    <img src="/images/reverse-string.png" style="width:80%"/>
+  </div> 
+</div>
+
+---
+
+# Fast & Slow Pointers
+
+<br/>
+
+The <span class="hl">Fast & Slow pointer</span> approach, also known as the Hare & Tortoise algorithm, is a pointer algorithm that uses two pointers which move through the array (or sequence/LinkedList) at different speeds. 
+
+- Fast & Slow Pointers, distance btw them
+
+- Speed 
+
+---
+
+### reverse a string
+
+<br/>
+
+<div grid="~ cols-2 gap-8">
+  <div class="norm">
+    <p>Given the head of a Singly LinkedList, write a function to determine if the LinkedList has a cycle in it or not.</p>
+  </div>  
+  <div>
+    <img src="/images/cycle-linkedlist.png" style="width:80%"/>
+  </div> 
+</div>
+
+---
+
+### k'th node from the end of linked list
+
+<br/>
+
+<p class="norm">Given the head of a Singly LinkedList, Find k'th node from the end of a linked list.</p>
+
+ <img src="/images/kth-linkedlist.png" style="width:60%"/>
+
+---
+
+# Sliding Window
+
+<br/>
+
+In many problems dealing with an array (or a LinkedList), we are asked to find or calculate something among all the contiguous subarrays (or sublists) of a given size.
+
+---
+
+
+### longest substring
+
+<br/>
+
+<p class="norm">Given an array, find the average of all contiguous subarrays of size ‘K’ in it. </p>
+
+<img src="/images/avg-window.png" style="width:50%"/>
+
+---
+
+### longest substring
+
+<br/>
+
+<p class="norm">Given a string, find the length of the longest substring which has no repeating characters.</p>
+
+<p class="norm">Example1 Input: String="aabccbb“ 	Output: 3<br/>
+Explanation: The longest substring without any repeating characters is "abc".</p>
+
+<p class="norm">Example2 Input: String="abbbb“ Output: 2<br/>
+Explanation: The longest substring without any repeating characters is "ab".</p>
+
+<p class="norm">Example3 Input: String="abccde“	Output: 3<br/>
+Explanation: Longest substrings without any repeating characters are "abc" & "cde".</p>
+
+
+---
+
 
 <div id="labs">
 </div>
@@ -2266,6 +2429,19 @@ Implementation of CircularQueue class:
 
 -   review Binary Tree and 4 traverse methods
 -   exercise 📝 [lab4.ipynb](https://github.com/fastzhong/mth251/blob/main/public/notebooks/lab4.ipynb)
+
+
+---
+
+# Lab 4
+
+<br/>
+
+#### Exercise: convert binary tree from linked list to array 
+
+<br/>
+
+#### Exercise: convert binary tree from array to linked list  
 
 
 ---
