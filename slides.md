@@ -731,9 +731,9 @@ Memory is a limited resource in programing and memory allocation is quite compli
 
 Growth Pattern:
 
--   Python $new_allocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);$ (0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ...)
--   Java $((size * 3) / 2) + 1$
--   C# $size * 2$
+-   Python: $NewAllocated = (size_t)newsize + (newsize >> 3) + (newsize < 9 ? 3 : 6);$ // 0, 4, 8, 16, 25, 35, 46, 58, 72, 88, ... 
+-   Java: $((size * 3) / 2) + 1$
+-   C#: $size * 2$
 
 <br/>
 
@@ -1113,16 +1113,16 @@ In Linked List, each a single node in the linked list has two parts, one is to s
 <br/>
 
 <pre class="norm">
-- add(item)
-- append(item)
-- insert(position, item)
-- delete(item)
+- add(element)
+- append(element)
+- insert(position, element)
+- delete(element)
 - is_empty()
-- size() 
-- set(position, item)
+- __len__() 
+- set(position, element)
 - get(position)
-- search(item)
-- index(item) 
+- search(element)
+- index(element) 
 - pop() 
 - pop(position)
 </pre>
@@ -1175,33 +1175,6 @@ Comparing Array, the accessing is slower but the update is much faster.
 
 ---
 
-# Linked List
-
-<br/>
-
-<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
-  <div align="right">Linked List</div>
-  <div><img src="/images/ll_singly.png" style="width: 50%"/></div>
-  <div align="right">Doubly Linked List</div>
-  <div><img src="/images/ll_doubly.png" style="width: 50%"/></div>
-  <div align="right">Circular Linked List</div>
-  <div><img src="/images/ll_circular.png" style="width: 50%"/></div>
-  <div align="right">Positional Linked List</div>
-  <div><img src="/images/ll_positional.png" style="width: 50%"/></div>
-</div>
-
-<!--
-Besides Single Linked List, we have some other forms of linked list.
-
-For Circular Linked List, the last element points back to the first element, instead of null
-
-For Double Linked List, we have two pointers, one points to the previous node, the other points to the next.
-
-To speed up the accessing, we can create the position class, each node is associated with a position object. We don’t use indexing as position as indexing can be changed as we remove/add the nodes. The actual position logic is up to the implementation.
--->
-
----
-
 # Linked List vs. Array
 
 <br/>
@@ -1240,6 +1213,90 @@ Linked list is more flexible than Array but why Array is still important and use
 <!--
 Let us look at this picture, data in our computer can be stored in different place, especially on runtime, data is accessible not just in memory but also in cpu cache. Giving one example, if we have one integer array which contains 4 integer 1,2,3,4, if 1 is being processed by cpu, it will be loaded into cpu cache. As 2, 3, 4 are close to 1, and very likely to be processed next, So modern cpu is so smart that it will preload 2,3,4 into cpu cache together with 1. This optimization operation is available for array data structure but not linked list.
 -->
+
+---
+
+# Linked List
+
+<br/>
+
+<div class="inline-grid grid-cols-[1fr,2fr] gap-8">
+  <div align="right">Linked List</div>
+  <div><img src="/images/ll_singly.png" style="width: 50%"/></div>
+  <div align="right">Doubly Linked List</div>
+  <div><img src="/images/ll_doubly.png" style="width: 50%"/></div>
+  <div align="right">Circular Linked List</div>
+  <div><img src="/images/ll_circular.png" style="width: 50%"/></div>
+  <div align="right">Positional Linked List</div>
+  <div><img src="/images/ll_positional.png" style="width: 50%"/></div>
+</div>
+
+<!--
+Besides Single Linked List, we have some other forms of linked list.
+
+For Circular Linked List, the last element points back to the first element, instead of null
+
+For Double Linked List, we have two pointers, one points to the previous node, the other points to the next.
+
+To speed up the accessing, we can create the position class, each node is associated with a position object. We don’t use indexing as position as indexing can be changed as we remove/add the nodes. The actual position logic is up to the implementation.
+-->
+
+---
+
+# Circular Linked List
+
+<br/>
+
+a linked list where all nodes are connected to form a circle
+
+- <span class="norm">no null at then end</span>  
+- <span class="norm">can iterate from any node</span>   
+- <span class="norm">e.g. for cpu job list - OS putting running applications in a list and then to cycle through them by giviing each of them a slice of time to execute, and then making them wait, when it reaches the end of the list, it can cycle around to the front of the list</span>   
+
+
+circular singly linked list, circular doubly linked list, sorted circular linked list
+
+---
+
+# Circular Linked List: Operations (potential)
+
+<br/>
+
+<pre class="norm">
+- append(element)
+- delete(element)
+- search(element)
+- is_empty()
+- __len__() 
+</pre>
+
+---
+
+# Positional Linked List
+
+- use Position class instead of index 
+- remove iteration 
+
+---
+
+# Positional Linked List: Operations (potential)
+
+<br/>
+
+<pre class="norm">
+- first()
+- last()
+- before(position)
+- after(position)
+- set(position, element)
+- search(element)
+- is_empty()
+- __len__() 
+- add_first(element)
+- add_last(element)
+- add_before(position, element) 
+- add_after(position, element)
+</pre>
 
 ---
 
