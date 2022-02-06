@@ -720,7 +720,6 @@ Memory is a limited resource in programing and memory allocation is quite compli
   <div>
     <p class="norm">- what is the good space/slot size for an array?</p>
     <p class="norm">- when is the good time to expand/shrink the array? </p>
-    
   </div>  
   <div align="center">
     <img src="/images/dynamic_array.png" style="width: 90%"/>
@@ -1723,7 +1722,7 @@ Depth: no. edges in path from the node to the root
 <div grid="~ cols-2 gap-8">
   <div align="left" class="norm">
     <ul>
-      <li><span class="hl">Complete Tree</span>  : every level is completely filled except the last (leaf) and all nodes are as far left as possible</li> 
+      <li><span class="hl">Complete Binary Tree</span>  : every level is completely filled except the last (leaf) and all nodes are as far left as possible</li> 
       <br/>
       <li><span class="hl">Full Binary Tree</span>  : every node has two child nodes except leaf</li> 
       <br/>
