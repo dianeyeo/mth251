@@ -105,6 +105,16 @@ slides online: [https://mth251.fastzhong.com/](https://mth251.fastzhong.com/)
 
 ---
 
+# Learning Resource
+
+📚 books
+
+if you want to dive deeper into proofs and the mathematics of computer science:  
+
+[Building Blocks for Theoretical Computer Science](https://mfleck.cs.illinois.edu/building-blocks/index-sp2020.html) by Margaret M. Fleck
+
+---
+
 # Why Python
 
 > _The TIOBE Programming Community index is an indicator of the popularity of programming languages._
@@ -1248,7 +1258,7 @@ To speed up the accessing, we can create the position class, each node is associ
 
 a linked list where all nodes are connected to form a circle
 
-- <span class="norm">no null at then end</span>  
+- <span class="norm">no null at the end</span>  
 - <span class="norm">can iterate from any node</span>   
 - <span class="norm">e.g. for cpu job list - OS putting running applications in a list and then to cycle through them by giviing each of them a slice of time to execute, and then making them wait, when it reaches the end of the list, it can cycle around to the front of the list</span>   
 
@@ -2099,7 +2109,7 @@ In many problems dealing with an array (or a LinkedList), we are asked to find o
 ---
 
 
-### longest substring
+### the average
 
 <br/>
 
