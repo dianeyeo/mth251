@@ -3,7 +3,7 @@ theme: seriph
 title: "MTH251"
 background: https://mth251.fastzhong.com/images/cover.webp  
 highlighter: shiki
-lineNumbers: true
+lineNumbers: false
 colorSchema: "light"
 ---
 
