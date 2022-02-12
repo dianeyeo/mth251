@@ -1763,6 +1763,18 @@ layout: center
 
 ---
 
+# Big-O
+
+<br/>
+
+😊 $O(1) < O(\log_* n) < O(n) < O(n\log_* n) < O(n^2) < O(2^n) < O(n!)$ 🥵
+
+<img src="/images/bigo-chart.jpeg" style="width:50%"/>
+
+<span class="norm"><mdi-file-code /> [https://www.bigocheatsheet.com/](https://www.bigocheatsheet.com/)</span>
+
+---
+
 # Array
 
 <div style="width: 100%">
